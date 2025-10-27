@@ -1,0 +1,36 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/dyshin/**)",
+      "Bash(npx @playwright/mcp@latest --version:*)",
+      "WebFetch(domain:lobehub.com)",
+      "WebSearch",
+      "WebFetch(domain:ui.shadcn.com)",
+      "Bash(npx create-next-app:*)",
+      "Bash(npx create-next-app@latest:*)",
+      "Bash(pkill:*)",
+      "Bash(npm install)",
+      "Bash(npm run build:*)",
+      "Bash(npm run dev)",
+      "Bash(find:*)",
+      "Bash(npx playwright install:*)",
+      "Bash(npm install:*)",
+      "Bash(node playwright-test.js:*)",
+      "Bash(node:*)",
+      "Bash(lsof:*)",
+      "Bash(awk:*)",
+      "Bash(for pid in 21293 87157)",
+      "Bash(do echo \"=== PID: $pid ===\")",
+      "Bash(done)",
+      "WebFetch(domain:html.to.design)",
+      "WebFetch(domain:h2d-mcp.divriots.com)",
+      "Bash(kill:*)",
+      "Bash(xargs:*)",
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

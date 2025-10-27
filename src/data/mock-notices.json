@@ -1,0 +1,464 @@
+{
+  "notices": [
+    {
+      "id": "30",
+      "category": "announcement",
+      "title": "2024년 연말 결산 공지",
+      "content": "<p>2024년 연말 결산 관련 공지사항입니다.</p><p>연도별 통계와 성과를 확인해주세요.</p>",
+      "createdAt": "2025-01-24T16:00:00Z",
+      "updatedAt": "2025-01-24T16:00:00Z",
+      "viewCount": 50,
+      "isPinned": false,
+      "author": {
+        "id": "admin",
+        "name": "관리자"
+      },
+      "status": "published"
+    },
+    {
+      "id": "29",
+      "category": "update",
+      "title": "[숨겨짐 상태 테스트] 만료된 이벤트 공지",
+      "content": "<p>이 공지는 만료되어 숨겨진 상태입니다.</p><p>expireAt이 과거로 설정되어 있습니다.</p>",
+      "createdAt": "2025-01-24T15:00:00Z",
+      "updatedAt": "2025-01-24T15:00:00Z",
+      "viewCount": 120,
+      "isPinned": false,
+      "expireAt": "2025-01-20T00:00:00Z",
+      "author": {
+        "id": "admin",
+        "name": "관리자"
+      },
+      "status": "published"
+    },
+    {
+      "id": "28",
+      "category": "event",
+      "title": "[발행됨 상태 테스트] 진행 중인 이벤트",
+      "content": "<p>현재 발행되어 진행 중인 이벤트입니다.</p><p>모든 사용자가 볼 수 있습니다.</p>",
+      "createdAt": "2025-01-24T14:00:00Z",
+      "updatedAt": "2025-01-24T14:00:00Z",
+      "viewCount": 450,
+      "isPinned": false,
+      "author": {
+        "id": "admin",
+        "name": "관리자"
+      },
+      "status": "published"
+    },
+    {
+      "id": "27",
+      "category": "announcement",
+      "title": "[예약됨 상태 테스트] 2월 1일 공개 예정 공지",
+      "content": "<p>이 공지는 2월 1일에 자동으로 공개됩니다.</p><p>publishAt이 미래로 설정되어 있습니다.</p>",
+      "createdAt": "2025-01-24T13:00:00Z",
+      "updatedAt": "2025-01-24T13:00:00Z",
+      "viewCount": 0,
+      "isPinned": false,
+      "publishAt": "2025-02-01T00:00:00Z",
+      "author": {
+        "id": "admin",
+        "name": "관리자"
+      },
+      "status": "published"
+    },
+    {
+      "id": "26",
+      "category": "update",
+      "title": "[임시저장 상태 테스트] 작성 중인 공지",
+      "content": "<p>이 공지는 아직 임시저장 상태입니다.</p><p>발행되지 않아 사용자에게 보이지 않습니다.</p>",
+      "createdAt": "2025-01-24T12:00:00Z",
+      "updatedAt": "2025-01-24T12:00:00Z",
+      "viewCount": 0,
+      "isPinned": false,
+      "author": {
+        "id": "admin",
+        "name": "관리자"
+      },
+      "status": "draft"
+    },
+    {
+      "id": "25",
+      "category": "urgent",
+      "title": "긴급 보안 업데이트 안내",
+      "content": "<p>보안 취약점 패치를 위한 긴급 업데이트가 진행됩니다.</p><p>업데이트 시간: 1월 25일 새벽 3시-4시</p>",
+      "createdAt": "2025-01-23T18:00:00Z",
+      "updatedAt": "2025-01-23T18:00:00Z",
+      "viewCount": 892,
+      "isPinned": true,
+      "showInBanner": true,
+      "author": {
+        "id": "admin",
+        "name": "관리자"
+      },
+      "status": "published"
+    },
+    {
+      "id": "24",
+      "category": "event",
+      "title": "추천인 이벤트 당첨자 발표",
+      "content": "<p>1월 추천인 이벤트 당첨자를 발표합니다.</p><p>당첨자 분들께는 개별 연락 드립니다.</p>",
+      "createdAt": "2025-01-22T15:00:00Z",
+      "updatedAt": "2025-01-22T15:00:00Z",
+      "viewCount": 1245,
+      "isPinned": false,
+      "author": {
+        "id": "admin",
+        "name": "관리자"
+      },
+      "status": "published"
+    },
+    {
+      "id": "23",
+      "category": "update",
+      "title": "강의 다운로드 기능 개선",
+      "content": "<p>강의 다운로드 속도가 개선되었습니다.</p><p>이제 더 빠르게 강의를 다운로드하실 수 있습니다.</p>",
+      "createdAt": "2025-01-21T11:00:00Z",
+      "updatedAt": "2025-01-21T11:00:00Z",
+      "viewCount": 567,
+      "isPinned": false,
+      "author": {
+        "id": "admin",
+        "name": "관리자"
+      },
+      "status": "published"
+    },
+    {
+      "id": "22",
+      "category": "announcement",
+      "title": "2월 휴일 운영 안내",
+      "content": "<p>설 연휴 기간 고객센터 운영 시간을 안내드립니다.</p><p>2월 9일-12일: 휴무</p>",
+      "createdAt": "2025-01-20T09:00:00Z",
+      "updatedAt": "2025-01-20T09:00:00Z",
+      "viewCount": 234,
+      "isPinned": false,
+      "author": {
+        "id": "admin",
+        "name": "관리자"
+      },
+      "status": "published"
+    },
+    {
+      "id": "21",
+      "category": "event",
+      "title": "후기 작성 이벤트",
+      "content": "<p>강의 후기를 작성하고 포인트를 받으세요!</p><p>1월 31일까지 진행됩니다.</p>",
+      "createdAt": "2025-01-19T14:00:00Z",
+      "updatedAt": "2025-01-19T14:00:00Z",
+      "viewCount": 678,
+      "isPinned": false,
+      "author": {
+        "id": "admin",
+        "name": "관리자"
+      },
+      "status": "published"
+    },
+    {
+      "id": "20",
+      "category": "update",
+      "title": "검색 기능 향상",
+      "content": "<p>AI 기반 검색 기능이 추가되어 더 정확한 검색 결과를 제공합니다.</p>",
+      "createdAt": "2025-01-18T10:00:00Z",
+      "updatedAt": "2025-01-18T10:00:00Z",
+      "viewCount": 445,
+      "isPinned": false,
+      "author": {
+        "id": "admin",
+        "name": "관리자"
+      },
+      "status": "published"
+    },
+    {
+      "id": "19",
+      "category": "announcement",
+      "title": "이용약관 업데이트",
+      "content": "<p>이용약관이 업데이트되었습니다.</p><p>주요 변경사항을 확인해주세요.</p>",
+      "createdAt": "2025-01-17T16:00:00Z",
+      "updatedAt": "2025-01-17T16:00:00Z",
+      "viewCount": 312,
+      "isPinned": false,
+      "author": {
+        "id": "admin",
+        "name": "관리자"
+      },
+      "status": "published"
+    },
+    {
+      "id": "18",
+      "category": "urgent",
+      "title": "로그인 오류 해결 완료",
+      "content": "<p>일부 사용자에게 발생한 로그인 오류가 해결되었습니다.</p>",
+      "createdAt": "2025-01-16T13:00:00Z",
+      "updatedAt": "2025-01-16T13:00:00Z",
+      "viewCount": 1567,
+      "isPinned": false,
+      "author": {
+        "id": "admin",
+        "name": "관리자"
+      },
+      "status": "published"
+    },
+    {
+      "id": "17",
+      "category": "event",
+      "title": "신규 강의 출시 기념 할인",
+      "content": "<p>Python 고급 과정 출시 기념 50% 할인!</p><p>1월 한 달간 진행됩니다.</p>",
+      "createdAt": "2025-01-16T09:00:00Z",
+      "updatedAt": "2025-01-16T09:00:00Z",
+      "viewCount": 2341,
+      "isPinned": false,
+      "showInBanner": true,
+      "bannerStartDate": "2025-01-16",
+      "bannerEndDate": "2025-01-31",
+      "author": {
+        "id": "admin",
+        "name": "관리자"
+      },
+      "status": "published"
+    },
+    {
+      "id": "16",
+      "category": "update",
+      "title": "알림 설정 기능 추가",
+      "content": "<p>원하는 알림만 받을 수 있도록 상세 설정 기능이 추가되었습니다.</p>",
+      "createdAt": "2025-01-15T14:00:00Z",
+      "updatedAt": "2025-01-15T14:00:00Z",
+      "viewCount": 523,
+      "isPinned": false,
+      "author": {
+        "id": "admin",
+        "name": "관리자"
+      },
+      "status": "published"
+    },
+    {
+      "id": "15",
+      "category": "announcement",
+      "title": "1월 인기 강의 TOP 10",
+      "content": "<p>1월 가장 인기 있는 강의 TOP 10을 소개합니다.</p>",
+      "createdAt": "2025-01-14T11:00:00Z",
+      "updatedAt": "2025-01-14T11:00:00Z",
+      "viewCount": 987,
+      "isPinned": false,
+      "author": {
+        "id": "admin",
+        "name": "관리자"
+      },
+      "status": "published"
+    },
+    {
+      "id": "14",
+      "category": "event",
+      "title": "학생 인증 추가 할인 이벤트",
+      "content": "<p>학생 인증 시 모든 강의 20% 추가 할인!</p>",
+      "createdAt": "2025-01-13T15:00:00Z",
+      "updatedAt": "2025-01-13T15:00:00Z",
+      "viewCount": 1456,
+      "isPinned": false,
+      "author": {
+        "id": "admin",
+        "name": "관리자"
+      },
+      "status": "published"
+    },
+    {
+      "id": "13",
+      "category": "update",
+      "title": "강의 배속 기능 개선",
+      "content": "<p>0.5배속부터 2.5배속까지 세밀한 조절이 가능해졌습니다.</p>",
+      "createdAt": "2025-01-12T10:00:00Z",
+      "updatedAt": "2025-01-12T10:00:00Z",
+      "viewCount": 634,
+      "isPinned": false,
+      "author": {
+        "id": "admin",
+        "name": "관리자"
+      },
+      "status": "published"
+    },
+    {
+      "id": "12",
+      "category": "announcement",
+      "title": "강사 모집 공고",
+      "content": "<p>AI/데이터 분야 전문 강사를 모집합니다.</p><p>자세한 사항은 채용 페이지를 참고해주세요.</p>",
+      "createdAt": "2025-01-11T13:00:00Z",
+      "updatedAt": "2025-01-11T13:00:00Z",
+      "viewCount": 789,
+      "isPinned": false,
+      "author": {
+        "id": "admin",
+        "name": "관리자"
+      },
+      "status": "published"
+    },
+    {
+      "id": "11",
+      "category": "urgent",
+      "title": "비밀번호 보안 강화 권고",
+      "content": "<p>최근 보안 위협에 대비하여 비밀번호 변경을 권장합니다.</p><p>8자리 이상, 특수문자 포함을 권장합니다.</p>",
+      "createdAt": "2025-01-10T16:00:00Z",
+      "updatedAt": "2025-01-10T16:00:00Z",
+      "viewCount": 2134,
+      "isPinned": false,
+      "author": {
+        "id": "admin",
+        "name": "관리자"
+      },
+      "status": "published"
+    },
+    {
+      "id": "10",
+      "category": "announcement",
+      "title": "2025년 교육 과정 업데이트 일정",
+      "content": "<p>2025년 새로운 교육 과정 업데이트 일정을 안내드립니다.</p><ul><li>1월: AI 입문 과정</li><li>2월: 데이터 분석 과정</li><li>3월: 웹 개발 과정</li></ul>",
+      "createdAt": "2024-12-15T09:00:00Z",
+      "updatedAt": "2024-12-15T09:00:00Z",
+      "viewCount": 654,
+      "isPinned": false,
+      "author": {
+        "id": "admin",
+        "name": "관리자"
+      },
+      "status": "published"
+    },
+    {
+      "id": "9",
+      "category": "urgent",
+      "title": "결제 시스템 일시 장애 복구 완료",
+      "content": "<p>12월 18일 발생한 결제 시스템 장애가 복구되었습니다.</p><p>불편을 드려 죄송합니다.</p>",
+      "createdAt": "2024-12-18T15:30:00Z",
+      "updatedAt": "2024-12-18T15:30:00Z",
+      "viewCount": 2156,
+      "isPinned": false,
+      "author": {
+        "id": "admin",
+        "name": "관리자"
+      },
+      "status": "published"
+    },
+    {
+      "id": "8",
+      "category": "update",
+      "title": "다크모드 기능 추가",
+      "content": "<p>사용자 요청이 많았던 다크모드 기능이 추가되었습니다.</p><p>설정에서 변경할 수 있습니다.</p>",
+      "createdAt": "2024-12-20T10:00:00Z",
+      "updatedAt": "2024-12-20T10:00:00Z",
+      "viewCount": 987,
+      "isPinned": false,
+      "author": {
+        "id": "admin",
+        "name": "관리자"
+      },
+      "status": "published"
+    },
+    {
+      "id": "7",
+      "category": "announcement",
+      "title": "고객센터 운영시간 변경 안내",
+      "content": "<p>2025년 1월부터 고객센터 운영시간이 변경됩니다.</p><p>평일 09:00-18:00 → 09:00-19:00</p>",
+      "createdAt": "2024-12-25T14:00:00Z",
+      "updatedAt": "2024-12-25T14:00:00Z",
+      "viewCount": 234,
+      "isPinned": false,
+      "author": {
+        "id": "admin",
+        "name": "관리자"
+      },
+      "status": "published"
+    },
+    {
+      "id": "6",
+      "category": "event",
+      "title": "겨울방학 특별 할인 이벤트",
+      "content": "<p>겨울방학 맞이 전 강좌 30% 할인!</p><p>기간: 2025년 1월 15일 ~ 2월 28일</p>",
+      "createdAt": "2024-12-28T09:00:00Z",
+      "updatedAt": "2024-12-28T09:00:00Z",
+      "viewCount": 3421,
+      "isPinned": false,
+      "author": {
+        "id": "admin",
+        "name": "관리자"
+      },
+      "status": "published"
+    },
+    {
+      "id": "5",
+      "category": "update",
+      "title": "모바일 앱 2.0 버전 출시",
+      "content": "<p>새로운 UI/UX와 다양한 기능이 추가된 모바일 앱 2.0이 출시되었습니다.</p>",
+      "createdAt": "2025-01-03T11:00:00Z",
+      "updatedAt": "2025-01-03T11:00:00Z",
+      "viewCount": 1543,
+      "isPinned": false,
+      "author": {
+        "id": "admin",
+        "name": "관리자"
+      },
+      "status": "published"
+    },
+    {
+      "id": "4",
+      "category": "announcement",
+      "title": "개인정보처리방침 변경 안내",
+      "content": "<p>개인정보처리방침이 2025년 2월 1일부터 변경됩니다.</p><p>자세한 내용은 약관 페이지를 확인해주세요.</p>",
+      "createdAt": "2025-01-05T16:00:00Z",
+      "updatedAt": "2025-01-05T16:00:00Z",
+      "viewCount": 543,
+      "isPinned": false,
+      "author": {
+        "id": "admin",
+        "name": "관리자"
+      },
+      "status": "published"
+    },
+    {
+      "id": "3",
+      "category": "event",
+      "title": "신규 회원 가입 이벤트",
+      "content": "<p>1월 한 달간 신규 회원 가입 시 프리미엄 30일 무료 제공!</p><p>지금 바로 가입하고 혜택을 받아보세요.</p>",
+      "createdAt": "2025-01-08T10:00:00Z",
+      "updatedAt": "2025-01-08T10:00:00Z",
+      "viewCount": 2340,
+      "isPinned": true,
+      "author": {
+        "id": "admin",
+        "name": "관리자"
+      },
+      "status": "published"
+    },
+    {
+      "id": "2",
+      "category": "update",
+      "title": "AI 자료 추천 기능 출시",
+      "content": "<p>새로운 AI 기반 자료 추천 기능이 출시되었습니다.</p><p>사용자의 학습 패턴을 분석하여 맞춤형 교육자료를 추천해드립니다.</p>",
+      "createdAt": "2025-01-10T14:00:00Z",
+      "updatedAt": "2025-01-10T14:00:00Z",
+      "viewCount": 856,
+      "isPinned": true,
+      "author": {
+        "id": "admin",
+        "name": "관리자"
+      },
+      "status": "published"
+    },
+    {
+      "id": "1",
+      "category": "urgent",
+      "title": "서버 점검 안내 (12/25 02:00-06:00)",
+      "content": "<p>안녕하세요, AIDT입니다.</p><p>서버 점검으로 인해 아래 시간동안 서비스 이용이 제한됩니다.</p><ul><li>점검 일시: 2025년 12월 25일 02:00-06:00</li><li>점검 내용: 시스템 안정화 작업</li></ul><p>이용에 불편을 드려 죄송합니다.</p>",
+      "createdAt": "2025-01-15T09:00:00Z",
+      "updatedAt": "2025-01-15T09:00:00Z",
+      "viewCount": 1234,
+      "isPinned": true,
+      "showInBanner": true,
+      "showAsModal": true,
+      "bannerStartDate": "2025-01-15",
+      "bannerEndDate": "2025-12-25",
+      "author": {
+        "id": "admin",
+        "name": "관리자"
+      },
+      "status": "published"
+    }
+  ]
+}

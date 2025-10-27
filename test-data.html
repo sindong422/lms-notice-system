@@ -1,0 +1,1550 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>테스트 데이터 생성</title>
+</head>
+<body>
+  <h1>AIDT 공지사항 테스트 데이터 생성</h1>
+  <p>브라우저 콘솔을 확인하세요.</p>
+  <button onclick="generateData()">데이터 생성</button>
+  <button onclick="clearData()">데이터 삭제</button>
+
+  <script>
+    const notices = [
+  {
+    "id": "176183935462930",
+    "category": "announcement",
+    "title": "AIDT 플랫폼 사용 가이드 - 19차",
+    "content": "<h2>선생님을 위한 AIDT 활용 가이드</h2><p><img src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNlOGY1ZTkiLz4KICAgICAgPHBvbHlnb24gcG9pbnRzPSIyMDAsNTAgMzAwLDE1MCAyMDAsMjUwIDEwMCwxNTAiIGZpbGw9IiMzODhlM2MiIG9wYWNpdHk9IjAuNyIvPgogICAgICA8cG9seWdvbiBwb2ludHM9IjIwMCw4MCAyNzAsMTUwIDIwMCwyMjAgMTMwLDE1MCIgZmlsbD0iIzY2YmI2YSIgb3BhY2l0eT0iMC42Ii8+CiAgICAgIDxjaXJjbGUgY3g9IjIwMCIgY3k9IjE1MCIgcj0iMzAiIGZpbGw9IiM4MWM3ODQiIG9wYWNpdHk9IjAuOCIvPgogICAgPC9zdmc+\" width=\"400\" /></p><h3>주요 기능</h3><ul><li><strong>학습 진도 추적:</strong> 실시간으로 학생들의 학습 현황 확인</li><li><strong>AI 과제 생성:</strong> 학생 수준에 맞는 맞춤형 과제 자동 생성</li><li><strong>성적 분석:</strong> AI 기반 성적 분석 및 개선 방안 제시</li></ul><p>자세한 사용 방법은 도움말 센터를 참고해주세요.</p>",
+    "createdAt": "2025-10-30T15:49:14.629Z",
+    "updatedAt": "2025-10-30T15:49:14.629Z",
+    "viewCount": 385,
+    "isPinned": true,
+    "showInBanner": true,
+    "bannerContent": "[중요] AIDT 플랫폼 사용 가이드 - 19차",
+    "bannerStartDate": "2025-10-26T13:29",
+    "bannerEndDate": "2025-11-26T13:29",
+    "bannerDismissDuration": "1hour",
+    "showAsModal": true,
+    "modalContent": "알림: AIDT 플랫폼 사용 가이드 - 19차",
+    "modalStartDate": "2025-10-26T13:29",
+    "modalEndDate": "2025-11-10T13:29",
+    "modalDismissDuration": "12hours",
+    "priority": 3,
+    "author": {
+      "id": "admin",
+      "name": "관리자"
+    },
+    "status": "draft",
+    "history": [
+      {
+        "action": "created",
+        "timestamp": "2025-10-30T15:49:14.629Z",
+        "status": "draft",
+        "note": "임시저장됨"
+      }
+    ]
+  },
+  {
+    "id": "176163467268834",
+    "category": "announcement",
+    "title": "영어 독해 AI - 고등 과정 오픈 - 23차",
+    "content": "<h2>고등학교 영어 독해 과정</h2><p><img src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNmM2U1ZjUiLz4KICAgICAgPHJlY3QgeD0iODAiIHk9IjgwIiB3aWR0aD0iMjQwIiBoZWlnaHQ9IjE0MCIgcng9IjIwIiBmaWxsPSIjN2IxZmEyIiBvcGFjaXR5PSIwLjciLz4KICAgICAgPHJlY3QgeD0iMTAwIiB5PSIxMDAiIHdpZHRoPSIyMDAiIGhlaWdodD0iMTAwIiByeD0iMTUiIGZpbGw9IiM5YzI3YjAiIG9wYWNpdHk9IjAuNiIvPgogICAgICA8cmVjdCB4PSIxMjAiIHk9IjEyMCIgd2lkdGg9IjE2MCIgaGVpZ2h0PSI2MCIgcng9IjEwIiBmaWxsPSIjYmE2OGM4IiBvcGFjaXR5PSIwLjUiLz4KICAgIDwvc3ZnPg==\" width=\"400\" /></p><p>고등학생을 위한 심화 영어 독해 과정이 오픈되었습니다.</p><h3>특징</h3><ul><li>수능 유형 독해 문제</li><li>문단별 상세 해설</li><li>어휘 자동 정리</li><li>AI 기반 오답 분석</li></ul>",
+    "createdAt": "2025-10-28T06:57:52.688Z",
+    "updatedAt": "2025-10-28T06:57:52.688Z",
+    "viewCount": 93,
+    "isPinned": true,
+    "showInBanner": true,
+    "bannerStartDate": "2025-10-26T13:29",
+    "bannerEndDate": "2025-11-26T13:29",
+    "bannerDismissDuration": "3hours",
+    "showAsModal": true,
+    "modalBody": "<p><strong>중요한 공지사항입니다.</strong></p><h2>고등학교 영어 독해 과정</h2><p><img src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNmM2U1ZjUiLz4KICAgICAgPHJlY3QgeD0iODAiIHk9IjgwIiB3aWR0aD0iMjQwIiBoZWlnaHQ9IjE0MCIgcng9IjIwIiBmaWxsPSIjN2IxZmEyIiBvcGFjaXR5PSIwLjciLz4KICAgICAgPHJlY3QgeD0iMTAwIiB5PSIxMDAiIHdpZHRoPSIyMDAiIGhlaWdodD0iMTAwIiByeD0iMTUiIGZpbGw9IiM5YzI3YjAiIG9wYWNpdHk9IjAuNiIvPgogICAgICA8cmVjdCB4PSIxMjAiIHk9IjEyMCIgd2lkdGg9IjE2MCIgaGVpZ2h0PSI2MCIgcng9IjEwIiBmaWxsPSIjYmE2OGM4IiBvcGFjaXR5PSIwLjUiLz4KICAgIDwvc3ZnPg==\" width=\"400\" /></p><p>고등학생을 위한 심화 영어 독해 과정이 오픈되었습니다.</p><h3>특징</h3><ul><li>수능 유형 독해 문제</li><li>문단별 상세 해설</li><li>어휘 자동 정리</li><li>AI 기반 오답 분석</li></ul>",
+    "modalStartDate": "2025-10-26T13:29",
+    "modalEndDate": "2025-11-10T13:29",
+    "modalDismissDuration": "1day",
+    "priority": 3,
+    "author": {
+      "id": "admin",
+      "name": "관리자"
+    },
+    "status": "published",
+    "history": [
+      {
+        "action": "created",
+        "timestamp": "2025-10-28T06:57:52.688Z",
+        "status": "draft"
+      },
+      {
+        "action": "published",
+        "timestamp": "2025-10-28T06:57:53.688Z",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "id": "176160470103723",
+    "category": "event",
+    "title": "영어 단어 암기 마라톤 - 12차",
+    "content": "<h2>30일 영어 단어 완성 챌린지</h2><p><img src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNmY2U0ZWMiLz4KICAgICAgPHBvbHlnb24gcG9pbnRzPSIyMDAsODAgMjQwLDE2MCAyMDAsMjQwIDE2MCwxNjAiIGZpbGw9IiNjMjE4NWIiIG9wYWNpdHk9IjAuNyIvPgogICAgICA8cG9seWdvbiBwb2ludHM9IjIwMCwxMDAgMjMwLDE1MCAyMDAsMjAwIDE3MCwxNTAiIGZpbGw9IiNlOTFlNjMiIG9wYWNpdHk9IjAuNiIvPgogICAgICA8Y2lyY2xlIGN4PSIyMDAiIGN5PSIxNTAiIHI9IjI1IiBmaWxsPSIjZjA2MjkyIiBvcGFjaXR5PSIwLjgiLz4KICAgIDwvc3ZnPg==\" width=\"380\" /></p><p><strong>기간:</strong> 2025년 7월 1일 ~ 7월 31일</p><h3>목표</h3><p>30일 동안 매일 20개씩 총 600개 단어 학습</p><h3>참여 혜택</h3><ul><li>학습 진도에 따른 배지 획득</li><li>완주 시 수료증 발급</li><li>우수 참가자 시상</li></ul>",
+    "createdAt": "2025-10-27T22:38:21.037Z",
+    "updatedAt": "2025-10-27T22:38:21.037Z",
+    "viewCount": 368,
+    "isPinned": true,
+    "showInBanner": true,
+    "bannerStartDate": "2025-10-26T13:29",
+    "bannerEndDate": "2025-11-26T13:29",
+    "bannerDismissDuration": "6hours",
+    "showAsModal": true,
+    "modalStartDate": "2025-10-26T13:29",
+    "modalEndDate": "2025-11-10T13:29",
+    "modalDismissDuration": "3days",
+    "priority": 2,
+    "author": {
+      "id": "admin",
+      "name": "관리자"
+    },
+    "status": "published",
+    "history": [
+      {
+        "action": "created",
+        "timestamp": "2025-10-27T22:38:21.037Z",
+        "status": "draft"
+      },
+      {
+        "action": "published",
+        "timestamp": "2025-10-27T22:38:22.037Z",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "id": "176147204576611",
+    "category": "event",
+    "title": "영어 단어 암기 마라톤",
+    "content": "<h2>30일 영어 단어 완성 챌린지</h2><p><img src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNmY2U0ZWMiLz4KICAgICAgPHBvbHlnb24gcG9pbnRzPSIyMDAsODAgMjQwLDE2MCAyMDAsMjQwIDE2MCwxNjAiIGZpbGw9IiNjMjE4NWIiIG9wYWNpdHk9IjAuNyIvPgogICAgICA8cG9seWdvbiBwb2ludHM9IjIwMCwxMDAgMjMwLDE1MCAyMDAsMjAwIDE3MCwxNTAiIGZpbGw9IiNlOTFlNjMiIG9wYWNpdHk9IjAuNiIvPgogICAgICA8Y2lyY2xlIGN4PSIyMDAiIGN5PSIxNTAiIHI9IjI1IiBmaWxsPSIjZjA2MjkyIiBvcGFjaXR5PSIwLjgiLz4KICAgIDwvc3ZnPg==\" width=\"380\" /></p><p><strong>기간:</strong> 2025년 7월 1일 ~ 7월 31일</p><h3>목표</h3><p>30일 동안 매일 20개씩 총 600개 단어 학습</p><h3>참여 혜택</h3><ul><li>학습 진도에 따른 배지 획득</li><li>완주 시 수료증 발급</li><li>우수 참가자 시상</li></ul>",
+    "createdAt": "2025-10-26T09:47:25.766Z",
+    "updatedAt": "2025-10-26T09:47:25.766Z",
+    "viewCount": 362,
+    "isPinned": false,
+    "showInBanner": false,
+    "showAsModal": false,
+    "priority": 2,
+    "publishAt": "2025-11-02T18:47",
+    "author": {
+      "id": "admin",
+      "name": "관리자"
+    },
+    "status": "scheduled",
+    "history": [
+      {
+        "action": "created",
+        "timestamp": "2025-10-26T09:47:25.766Z",
+        "status": "scheduled"
+      }
+    ]
+  },
+  {
+    "id": "176131471126427",
+    "category": "update",
+    "title": "수학 문제 풀이 AI 신규 기능 추가 - 16차",
+    "content": "<h2>단계별 풀이 과정 설명 기능</h2><p><img src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNlM2YyZmQiLz4KICAgICAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iMTUwIiByPSI4MCIgZmlsbD0iIzE5NzZkMiIgb3BhY2l0eT0iMC43Ii8+CiAgICAgIDxjaXJjbGUgY3g9IjE1MCIgY3k9IjEyMCIgcj0iNDAiIGZpbGw9IiM0MmE1ZjUiIG9wYWNpdHk9IjAuNiIvPgogICAgICA8Y2lyY2xlIGN4PSIyNTAiIGN5PSIxODAiIHI9IjUwIiBmaWxsPSIjNjRiNWY2IiBvcGFjaXR5PSIwLjYiLz4KICAgIDwvc3ZnPg==\" width=\"380\" /></p><p>이제 수학 문제 풀이 시 단계별로 상세한 설명을 제공합니다.</p><ul><li>각 단계마다 상세 설명</li><li>관련 개념 링크 제공</li><li>유사 문제 추천</li></ul>",
+    "createdAt": "2025-10-24T14:05:11.264Z",
+    "updatedAt": "2025-10-24T14:05:11.264Z",
+    "viewCount": 31,
+    "isPinned": false,
+    "showInBanner": false,
+    "showAsModal": false,
+    "priority": 2,
+    "author": {
+      "id": "admin",
+      "name": "관리자"
+    },
+    "status": "published",
+    "history": [
+      {
+        "action": "created",
+        "timestamp": "2025-10-24T14:05:11.264Z",
+        "status": "draft"
+      },
+      {
+        "action": "published",
+        "timestamp": "2025-10-24T14:05:12.264Z",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "id": "176130916763314",
+    "category": "update",
+    "title": "영어 발음 평가 AI 업데이트 - 3차",
+    "content": "<h2>영어 발음 평가 AI 개선</h2><p>더욱 정확한 발음 평가를 위해 AI 모델을 업데이트했습니다.</p><p><img src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNmM2U1ZjUiLz4KICAgICAgPHJlY3QgeD0iODAiIHk9IjgwIiB3aWR0aD0iMjQwIiBoZWlnaHQ9IjE0MCIgcng9IjIwIiBmaWxsPSIjN2IxZmEyIiBvcGFjaXR5PSIwLjciLz4KICAgICAgPHJlY3QgeD0iMTAwIiB5PSIxMDAiIHdpZHRoPSIyMDAiIGhlaWdodD0iMTAwIiByeD0iMTUiIGZpbGw9IiM5YzI3YjAiIG9wYWNpdHk9IjAuNiIvPgogICAgICA8cmVjdCB4PSIxMjAiIHk9IjEyMCIgd2lkdGg9IjE2MCIgaGVpZ2h0PSI2MCIgcng9IjEwIiBmaWxsPSIjYmE2OGM4IiBvcGFjaXR5PSIwLjUiLz4KICAgIDwvc3ZnPg==\" width=\"400\" /></p><h3>주요 개선 사항</h3><ul><li>발음 정확도 인식률 20% 향상</li><li>억양 분석 기능 추가</li><li>실시간 피드백 속도 개선</li></ul><p>업데이트된 기능을 지금 바로 체험해보세요!</p>",
+    "createdAt": "2025-10-24T12:32:47.633Z",
+    "updatedAt": "2025-10-24T12:32:47.633Z",
+    "viewCount": 55,
+    "isPinned": false,
+    "showInBanner": false,
+    "showAsModal": false,
+    "priority": 2,
+    "author": {
+      "id": "admin",
+      "name": "관리자"
+    },
+    "status": "published",
+    "history": [
+      {
+        "action": "created",
+        "timestamp": "2025-10-24T12:32:47.633Z",
+        "status": "draft"
+      },
+      {
+        "action": "published",
+        "timestamp": "2025-10-24T12:32:48.633Z",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "id": "176123039931616",
+    "category": "event",
+    "title": "AI 영어 말하기 챌린지 이벤트 - 5차",
+    "content": "<h2>AI와 함께하는 영어 말하기 도전!</h2><p><img src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNmY2U0ZWMiLz4KICAgICAgPHBvbHlnb24gcG9pbnRzPSIyMDAsODAgMjQwLDE2MCAyMDAsMjQwIDE2MCwxNjAiIGZpbGw9IiNjMjE4NWIiIG9wYWNpdHk9IjAuNyIvPgogICAgICA8cG9seWdvbiBwb2ludHM9IjIwMCwxMDAgMjMwLDE1MCAyMDAsMjAwIDE3MCwxNTAiIGZpbGw9IiNlOTFlNjMiIG9wYWNpdHk9IjAuNiIvPgogICAgICA8Y2lyY2xlIGN4PSIyMDAiIGN5PSIxNTAiIHI9IjI1IiBmaWxsPSIjZjA2MjkyIiBvcGFjaXR5PSIwLjgiLz4KICAgIDwvc3ZnPg==\" width=\"400\" /></p><p><strong>이벤트 기간:</strong> 2025년 6월 1일 ~ 6월 30일</p><h3>참여 방법</h3><ol><li>매일 AI 튜터와 영어 대화 5분 이상</li><li>발음 점수 80점 이상 획득</li><li>한 달간 20일 이상 참여</li></ol><h3>보상</h3><p>우수 참여자 30명에게 추가 학습 크레딧 지급!</p>",
+    "createdAt": "2025-10-23T14:39:59.316Z",
+    "updatedAt": "2025-10-23T14:39:59.316Z",
+    "viewCount": 464,
+    "isPinned": false,
+    "showInBanner": false,
+    "showAsModal": false,
+    "priority": 2,
+    "author": {
+      "id": "admin",
+      "name": "관리자"
+    },
+    "status": "published",
+    "history": [
+      {
+        "action": "created",
+        "timestamp": "2025-10-23T14:39:59.316Z",
+        "status": "draft"
+      },
+      {
+        "action": "published",
+        "timestamp": "2025-10-23T14:40:00.316Z",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "id": "17605713271001",
+    "category": "urgent",
+    "title": "수학 AI 튜터 서비스 장애 복구 완료",
+    "content": "<h2>서비스 복구 안내</h2><p>일시적으로 발생한 수학 AI 튜터 서비스 장애가 복구되었습니다.</p><p><img src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNlM2YyZmQiLz4KICAgICAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iMTUwIiByPSI4MCIgZmlsbD0iIzE5NzZkMiIgb3BhY2l0eT0iMC43Ii8+CiAgICAgIDxjaXJjbGUgY3g9IjE1MCIgY3k9IjEyMCIgcj0iNDAiIGZpbGw9IiM0MmE1ZjUiIG9wYWNpdHk9IjAuNiIvPgogICAgICA8Y2lyY2xlIGN4PSIyNTAiIGN5PSIxODAiIHI9IjUwIiBmaWxsPSIjNjRiNWY2IiBvcGFjaXR5PSIwLjYiLz4KICAgIDwvc3ZnPg==\" width=\"350\" /></p><p>이용에 불편을 드려 죄송합니다.</p>",
+    "createdAt": "2025-10-15T23:35:27.100Z",
+    "updatedAt": "2025-10-15T23:35:27.100Z",
+    "viewCount": 430,
+    "isPinned": false,
+    "showInBanner": false,
+    "showAsModal": false,
+    "priority": 1,
+    "publishAt": "2025-10-23T08:35",
+    "author": {
+      "id": "admin",
+      "name": "관리자"
+    },
+    "status": "scheduled",
+    "history": [
+      {
+        "action": "created",
+        "timestamp": "2025-10-15T23:35:27.100Z",
+        "status": "scheduled"
+      }
+    ]
+  },
+  {
+    "id": "176008703925536",
+    "category": "urgent",
+    "title": "AIDT 시스템 긴급 점검 안내 - 25차",
+    "content": "<h2>긴급 시스템 점검 안내</h2><p>보다 안정적인 서비스 제공을 위해 긴급 시스템 점검을 실시합니다.</p><p><img src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNmZmYzZTAiLz4KICAgICAgPHJlY3QgeD0iNTAiIHk9IjUwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iI2Y1N2MwMCIgb3BhY2l0eT0iMC43Ii8+CiAgICAgIDxyZWN0IHg9IjE4MCIgeT0iODAiIHdpZHRoPSIxMjAiIGhlaWdodD0iODAiIGZpbGw9IiNmYjhjMDAiIG9wYWNpdHk9IjAuNiIvPgogICAgICA8cmVjdCB4PSIxMjAiIHk9IjE2MCIgd2lkdGg9IjE2MCIgaGVpZ2h0PSI5MCIgZmlsbD0iI2ZmYTcyNiIgb3BhY2l0eT0iMC41Ii8+CiAgICA8L3N2Zz4=\" width=\"400\" /></p><p><strong>점검 일시:</strong> 2025년 5월 15일 02:00 ~ 04:00</p><p><strong>영향 범위:</strong> 전체 서비스 일시 중단</p><p>점검 시간 동안 서비스 이용이 불가하오니 양해 부탁드립니다.</p>",
+    "createdAt": "2025-10-10T09:03:59.255Z",
+    "updatedAt": "2025-10-10T09:03:59.255Z",
+    "viewCount": 57,
+    "isPinned": false,
+    "showInBanner": false,
+    "showAsModal": false,
+    "priority": 1,
+    "author": {
+      "id": "admin",
+      "name": "관리자"
+    },
+    "status": "published",
+    "history": [
+      {
+        "action": "created",
+        "timestamp": "2025-10-10T09:03:59.255Z",
+        "status": "draft"
+      },
+      {
+        "action": "published",
+        "timestamp": "2025-10-10T09:04:00.255Z",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "id": "17598989147960",
+    "category": "urgent",
+    "title": "AIDT 시스템 긴급 점검 안내",
+    "content": "<h2>긴급 시스템 점검 안내</h2><p>보다 안정적인 서비스 제공을 위해 긴급 시스템 점검을 실시합니다.</p><p><img src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNmZmYzZTAiLz4KICAgICAgPHJlY3QgeD0iNTAiIHk9IjUwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iI2Y1N2MwMCIgb3BhY2l0eT0iMC43Ii8+CiAgICAgIDxyZWN0IHg9IjE4MCIgeT0iODAiIHdpZHRoPSIxMjAiIGhlaWdodD0iODAiIGZpbGw9IiNmYjhjMDAiIG9wYWNpdHk9IjAuNiIvPgogICAgICA8cmVjdCB4PSIxMjAiIHk9IjE2MCIgd2lkdGg9IjE2MCIgaGVpZ2h0PSI5MCIgZmlsbD0iI2ZmYTcyNiIgb3BhY2l0eT0iMC41Ii8+CiAgICA8L3N2Zz4=\" width=\"400\" /></p><p><strong>점검 일시:</strong> 2025년 5월 15일 02:00 ~ 04:00</p><p><strong>영향 범위:</strong> 전체 서비스 일시 중단</p><p>점검 시간 동안 서비스 이용이 불가하오니 양해 부탁드립니다.</p>",
+    "createdAt": "2025-10-08T04:48:34.796Z",
+    "updatedAt": "2025-10-08T04:48:34.796Z",
+    "viewCount": 265,
+    "isPinned": false,
+    "showInBanner": false,
+    "showAsModal": false,
+    "priority": 1,
+    "author": {
+      "id": "admin",
+      "name": "관리자"
+    },
+    "status": "draft",
+    "history": [
+      {
+        "action": "created",
+        "timestamp": "2025-10-08T04:48:34.796Z",
+        "status": "draft",
+        "note": "임시저장됨"
+      }
+    ]
+  },
+  {
+    "id": "175916734602017",
+    "category": "event",
+    "title": "수학 올림피아드 준비반 모집 - 6차",
+    "content": "<h2>AI 기반 수학 올림피아드 준비반</h2><p><img src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNlM2YyZmQiLz4KICAgICAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iMTUwIiByPSI4MCIgZmlsbD0iIzE5NzZkMiIgb3BhY2l0eT0iMC43Ii8+CiAgICAgIDxjaXJjbGUgY3g9IjE1MCIgY3k9IjEyMCIgcj0iNDAiIGZpbGw9IiM0MmE1ZjUiIG9wYWNpdHk9IjAuNiIvPgogICAgICA8Y2lyY2xlIGN4PSIyNTAiIGN5PSIxODAiIHI9IjUwIiBmaWxsPSIjNjRiNWY2IiBvcGFjaXR5PSIwLjYiLz4KICAgIDwvc3ZnPg==\" width=\"380\" /></p><p>수학 올림피아드를 준비하는 학생들을 위한 특별반을 운영합니다.</p><h3>대상</h3><p>중학교 1~3학년 학생</p><h3>내용</h3><ul><li>AI 맞춤형 문제 풀이</li><li>실시간 질의응답</li><li>주간 모의고사</li></ul><p><strong>신청 기간:</strong> ~ 2025년 4월 30일</p>",
+    "createdAt": "2025-09-29T17:35:46.020Z",
+    "updatedAt": "2025-09-29T17:35:46.020Z",
+    "viewCount": 420,
+    "isPinned": false,
+    "showInBanner": false,
+    "showAsModal": false,
+    "priority": 2,
+    "author": {
+      "id": "admin",
+      "name": "관리자"
+    },
+    "status": "published",
+    "history": [
+      {
+        "action": "created",
+        "timestamp": "2025-09-29T17:35:46.020Z",
+        "status": "draft"
+      },
+      {
+        "action": "published",
+        "timestamp": "2025-09-29T17:35:47.020Z",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "id": "175878197364635",
+    "category": "event",
+    "title": "영어 단어 암기 마라톤 - 24차",
+    "content": "<h2>30일 영어 단어 완성 챌린지</h2><p><img src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNmY2U0ZWMiLz4KICAgICAgPHBvbHlnb24gcG9pbnRzPSIyMDAsODAgMjQwLDE2MCAyMDAsMjQwIDE2MCwxNjAiIGZpbGw9IiNjMjE4NWIiIG9wYWNpdHk9IjAuNyIvPgogICAgICA8cG9seWdvbiBwb2ludHM9IjIwMCwxMDAgMjMwLDE1MCAyMDAsMjAwIDE3MCwxNTAiIGZpbGw9IiNlOTFlNjMiIG9wYWNpdHk9IjAuNiIvPgogICAgICA8Y2lyY2xlIGN4PSIyMDAiIGN5PSIxNTAiIHI9IjI1IiBmaWxsPSIjZjA2MjkyIiBvcGFjaXR5PSIwLjgiLz4KICAgIDwvc3ZnPg==\" width=\"380\" /></p><p><strong>기간:</strong> 2025년 7월 1일 ~ 7월 31일</p><h3>목표</h3><p>30일 동안 매일 20개씩 총 600개 단어 학습</p><h3>참여 혜택</h3><ul><li>학습 진도에 따른 배지 획득</li><li>완주 시 수료증 발급</li><li>우수 참가자 시상</li></ul>",
+    "createdAt": "2025-09-25T06:32:53.646Z",
+    "updatedAt": "2025-09-25T06:32:53.646Z",
+    "viewCount": 320,
+    "isPinned": false,
+    "showInBanner": false,
+    "showAsModal": false,
+    "priority": 2,
+    "author": {
+      "id": "admin",
+      "name": "관리자"
+    },
+    "status": "published",
+    "history": [
+      {
+        "action": "created",
+        "timestamp": "2025-09-25T06:32:53.646Z",
+        "status": "draft"
+      },
+      {
+        "action": "published",
+        "timestamp": "2025-09-25T06:32:54.646Z",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "id": "17587314700402",
+    "category": "update",
+    "title": "영어 발음 평가 AI 업데이트",
+    "content": "<h2>영어 발음 평가 AI 개선</h2><p>더욱 정확한 발음 평가를 위해 AI 모델을 업데이트했습니다.</p><p><img src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNmM2U1ZjUiLz4KICAgICAgPHJlY3QgeD0iODAiIHk9IjgwIiB3aWR0aD0iMjQwIiBoZWlnaHQ9IjE0MCIgcng9IjIwIiBmaWxsPSIjN2IxZmEyIiBvcGFjaXR5PSIwLjciLz4KICAgICAgPHJlY3QgeD0iMTAwIiB5PSIxMDAiIHdpZHRoPSIyMDAiIGhlaWdodD0iMTAwIiByeD0iMTUiIGZpbGw9IiM5YzI3YjAiIG9wYWNpdHk9IjAuNiIvPgogICAgICA8cmVjdCB4PSIxMjAiIHk9IjEyMCIgd2lkdGg9IjE2MCIgaGVpZ2h0PSI2MCIgcng9IjEwIiBmaWxsPSIjYmE2OGM4IiBvcGFjaXR5PSIwLjUiLz4KICAgIDwvc3ZnPg==\" width=\"400\" /></p><h3>주요 개선 사항</h3><ul><li>발음 정확도 인식률 20% 향상</li><li>억양 분석 기능 추가</li><li>실시간 피드백 속도 개선</li></ul><p>업데이트된 기능을 지금 바로 체험해보세요!</p>",
+    "createdAt": "2025-09-24T16:31:10.040Z",
+    "updatedAt": "2025-09-24T16:31:10.040Z",
+    "viewCount": 60,
+    "isPinned": false,
+    "showInBanner": false,
+    "showAsModal": false,
+    "priority": 2,
+    "expireAt": "2025-09-24T01:31",
+    "author": {
+      "id": "admin",
+      "name": "관리자"
+    },
+    "status": "expired",
+    "history": [
+      {
+        "action": "created",
+        "timestamp": "2025-09-24T16:31:10.040Z",
+        "status": "draft"
+      },
+      {
+        "action": "published",
+        "timestamp": "2025-09-24T16:31:11.040Z",
+        "status": "published"
+      },
+      {
+        "action": "expired",
+        "timestamp": "2025-09-26T16:31:10.040Z",
+        "status": "expired",
+        "note": "관리자가 수동으로 숨김 처리함"
+      }
+    ]
+  },
+  {
+    "id": "175777745679829",
+    "category": "event",
+    "title": "수학 올림피아드 준비반 모집 - 18차",
+    "content": "<h2>AI 기반 수학 올림피아드 준비반</h2><p><img src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNlM2YyZmQiLz4KICAgICAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iMTUwIiByPSI4MCIgZmlsbD0iIzE5NzZkMiIgb3BhY2l0eT0iMC43Ii8+CiAgICAgIDxjaXJjbGUgY3g9IjE1MCIgY3k9IjEyMCIgcj0iNDAiIGZpbGw9IiM0MmE1ZjUiIG9wYWNpdHk9IjAuNiIvPgogICAgICA8Y2lyY2xlIGN4PSIyNTAiIGN5PSIxODAiIHI9IjUwIiBmaWxsPSIjNjRiNWY2IiBvcGFjaXR5PSIwLjYiLz4KICAgIDwvc3ZnPg==\" width=\"380\" /></p><p>수학 올림피아드를 준비하는 학생들을 위한 특별반을 운영합니다.</p><h3>대상</h3><p>중학교 1~3학년 학생</p><h3>내용</h3><ul><li>AI 맞춤형 문제 풀이</li><li>실시간 질의응답</li><li>주간 모의고사</li></ul><p><strong>신청 기간:</strong> ~ 2025년 4월 30일</p>",
+    "createdAt": "2025-09-13T15:30:56.798Z",
+    "updatedAt": "2025-09-13T15:30:56.798Z",
+    "viewCount": 486,
+    "isPinned": false,
+    "showInBanner": false,
+    "showAsModal": false,
+    "priority": 2,
+    "author": {
+      "id": "admin",
+      "name": "관리자"
+    },
+    "status": "published",
+    "history": [
+      {
+        "action": "created",
+        "timestamp": "2025-09-13T15:30:56.798Z",
+        "status": "draft"
+      },
+      {
+        "action": "published",
+        "timestamp": "2025-09-13T15:30:57.798Z",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "id": "175744785013125",
+    "category": "urgent",
+    "title": "수학 AI 튜터 서비스 장애 복구 완료 - 14차",
+    "content": "<h2>서비스 복구 안내</h2><p>일시적으로 발생한 수학 AI 튜터 서비스 장애가 복구되었습니다.</p><p><img src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNlM2YyZmQiLz4KICAgICAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iMTUwIiByPSI4MCIgZmlsbD0iIzE5NzZkMiIgb3BhY2l0eT0iMC43Ii8+CiAgICAgIDxjaXJjbGUgY3g9IjE1MCIgY3k9IjEyMCIgcj0iNDAiIGZpbGw9IiM0MmE1ZjUiIG9wYWNpdHk9IjAuNiIvPgogICAgICA8Y2lyY2xlIGN4PSIyNTAiIGN5PSIxODAiIHI9IjUwIiBmaWxsPSIjNjRiNWY2IiBvcGFjaXR5PSIwLjYiLz4KICAgIDwvc3ZnPg==\" width=\"350\" /></p><p>이용에 불편을 드려 죄송합니다.</p>",
+    "createdAt": "2025-09-09T19:57:30.131Z",
+    "updatedAt": "2025-09-09T19:57:30.131Z",
+    "viewCount": 208,
+    "isPinned": false,
+    "showInBanner": false,
+    "showAsModal": false,
+    "priority": 1,
+    "author": {
+      "id": "admin",
+      "name": "관리자"
+    },
+    "status": "published",
+    "history": [
+      {
+        "action": "created",
+        "timestamp": "2025-09-09T19:57:30.131Z",
+        "status": "draft"
+      },
+      {
+        "action": "published",
+        "timestamp": "2025-09-09T19:57:31.131Z",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "id": "17570345708165",
+    "category": "event",
+    "title": "수학 올림피아드 준비반 모집",
+    "content": "<h2>AI 기반 수학 올림피아드 준비반</h2><p><img src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNlM2YyZmQiLz4KICAgICAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iMTUwIiByPSI4MCIgZmlsbD0iIzE5NzZkMiIgb3BhY2l0eT0iMC43Ii8+CiAgICAgIDxjaXJjbGUgY3g9IjE1MCIgY3k9IjEyMCIgcj0iNDAiIGZpbGw9IiM0MmE1ZjUiIG9wYWNpdHk9IjAuNiIvPgogICAgICA8Y2lyY2xlIGN4PSIyNTAiIGN5PSIxODAiIHI9IjUwIiBmaWxsPSIjNjRiNWY2IiBvcGFjaXR5PSIwLjYiLz4KICAgIDwvc3ZnPg==\" width=\"380\" /></p><p>수학 올림피아드를 준비하는 학생들을 위한 특별반을 운영합니다.</p><h3>대상</h3><p>중학교 1~3학년 학생</p><h3>내용</h3><ul><li>AI 맞춤형 문제 풀이</li><li>실시간 질의응답</li><li>주간 모의고사</li></ul><p><strong>신청 기간:</strong> ~ 2025년 4월 30일</p>",
+    "createdAt": "2025-09-05T01:09:30.816Z",
+    "updatedAt": "2025-09-05T01:09:30.816Z",
+    "viewCount": 477,
+    "isPinned": false,
+    "showInBanner": false,
+    "showAsModal": false,
+    "priority": 2,
+    "author": {
+      "id": "admin",
+      "name": "관리자"
+    },
+    "status": "published",
+    "history": [
+      {
+        "action": "created",
+        "timestamp": "2025-09-05T01:09:30.816Z",
+        "status": "draft"
+      },
+      {
+        "action": "published",
+        "timestamp": "2025-09-05T01:09:31.816Z",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "id": "175622443273638",
+    "category": "update",
+    "title": "영어 발음 평가 AI 업데이트 - 27차",
+    "content": "<h2>영어 발음 평가 AI 개선</h2><p>더욱 정확한 발음 평가를 위해 AI 모델을 업데이트했습니다.</p><p><img src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNmM2U1ZjUiLz4KICAgICAgPHJlY3QgeD0iODAiIHk9IjgwIiB3aWR0aD0iMjQwIiBoZWlnaHQ9IjE0MCIgcng9IjIwIiBmaWxsPSIjN2IxZmEyIiBvcGFjaXR5PSIwLjciLz4KICAgICAgPHJlY3QgeD0iMTAwIiB5PSIxMDAiIHdpZHRoPSIyMDAiIGhlaWdodD0iMTAwIiByeD0iMTUiIGZpbGw9IiM5YzI3YjAiIG9wYWNpdHk9IjAuNiIvPgogICAgICA8cmVjdCB4PSIxMjAiIHk9IjEyMCIgd2lkdGg9IjE2MCIgaGVpZ2h0PSI2MCIgcng9IjEwIiBmaWxsPSIjYmE2OGM4IiBvcGFjaXR5PSIwLjUiLz4KICAgIDwvc3ZnPg==\" width=\"400\" /></p><h3>주요 개선 사항</h3><ul><li>발음 정확도 인식률 20% 향상</li><li>억양 분석 기능 추가</li><li>실시간 피드백 속도 개선</li></ul><p>업데이트된 기능을 지금 바로 체험해보세요!</p>",
+    "createdAt": "2025-08-26T16:07:12.736Z",
+    "updatedAt": "2025-08-26T16:07:12.736Z",
+    "viewCount": 368,
+    "isPinned": false,
+    "showInBanner": false,
+    "showAsModal": false,
+    "priority": 2,
+    "author": {
+      "id": "admin",
+      "name": "관리자"
+    },
+    "status": "published",
+    "history": [
+      {
+        "action": "created",
+        "timestamp": "2025-08-26T16:07:12.736Z",
+        "status": "draft"
+      },
+      {
+        "action": "published",
+        "timestamp": "2025-08-26T16:07:13.736Z",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "id": "175616095150012",
+    "category": "urgent",
+    "title": "AIDT 시스템 긴급 점검 안내 - 1차",
+    "content": "<h2>긴급 시스템 점검 안내</h2><p>보다 안정적인 서비스 제공을 위해 긴급 시스템 점검을 실시합니다.</p><p><img src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNmZmYzZTAiLz4KICAgICAgPHJlY3QgeD0iNTAiIHk9IjUwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iI2Y1N2MwMCIgb3BhY2l0eT0iMC43Ii8+CiAgICAgIDxyZWN0IHg9IjE4MCIgeT0iODAiIHdpZHRoPSIxMjAiIGhlaWdodD0iODAiIGZpbGw9IiNmYjhjMDAiIG9wYWNpdHk9IjAuNiIvPgogICAgICA8cmVjdCB4PSIxMjAiIHk9IjE2MCIgd2lkdGg9IjE2MCIgaGVpZ2h0PSI5MCIgZmlsbD0iI2ZmYTcyNiIgb3BhY2l0eT0iMC41Ii8+CiAgICA8L3N2Zz4=\" width=\"400\" /></p><p><strong>점검 일시:</strong> 2025년 5월 15일 02:00 ~ 04:00</p><p><strong>영향 범위:</strong> 전체 서비스 일시 중단</p><p>점검 시간 동안 서비스 이용이 불가하오니 양해 부탁드립니다.</p>",
+    "createdAt": "2025-08-25T22:29:11.500Z",
+    "updatedAt": "2025-08-25T22:29:11.500Z",
+    "viewCount": 122,
+    "isPinned": false,
+    "showInBanner": false,
+    "showAsModal": false,
+    "priority": 1,
+    "expireAt": "2025-08-25T07:29",
+    "author": {
+      "id": "admin",
+      "name": "관리자"
+    },
+    "status": "expired",
+    "history": [
+      {
+        "action": "created",
+        "timestamp": "2025-08-25T22:29:11.500Z",
+        "status": "draft"
+      },
+      {
+        "action": "published",
+        "timestamp": "2025-08-25T22:29:12.500Z",
+        "status": "published"
+      },
+      {
+        "action": "expired",
+        "timestamp": "2025-08-27T22:29:11.500Z",
+        "status": "expired",
+        "note": "관리자가 수동으로 숨김 처리함"
+      }
+    ]
+  },
+  {
+    "id": "175584329863437",
+    "category": "urgent",
+    "title": "수학 AI 튜터 서비스 장애 복구 완료 - 26차",
+    "content": "<h2>서비스 복구 안내</h2><p>일시적으로 발생한 수학 AI 튜터 서비스 장애가 복구되었습니다.</p><p><img src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNlM2YyZmQiLz4KICAgICAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iMTUwIiByPSI4MCIgZmlsbD0iIzE5NzZkMiIgb3BhY2l0eT0iMC43Ii8+CiAgICAgIDxjaXJjbGUgY3g9IjE1MCIgY3k9IjEyMCIgcj0iNDAiIGZpbGw9IiM0MmE1ZjUiIG9wYWNpdHk9IjAuNiIvPgogICAgICA8Y2lyY2xlIGN4PSIyNTAiIGN5PSIxODAiIHI9IjUwIiBmaWxsPSIjNjRiNWY2IiBvcGFjaXR5PSIwLjYiLz4KICAgIDwvc3ZnPg==\" width=\"350\" /></p><p>이용에 불편을 드려 죄송합니다.</p>",
+    "createdAt": "2025-08-22T06:14:58.634Z",
+    "updatedAt": "2025-08-22T06:14:58.634Z",
+    "viewCount": 38,
+    "isPinned": false,
+    "showInBanner": false,
+    "showAsModal": false,
+    "priority": 1,
+    "author": {
+      "id": "admin",
+      "name": "관리자"
+    },
+    "status": "published",
+    "history": [
+      {
+        "action": "created",
+        "timestamp": "2025-08-22T06:14:58.634Z",
+        "status": "draft"
+      },
+      {
+        "action": "published",
+        "timestamp": "2025-08-22T06:14:59.634Z",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "id": "175555413940626",
+    "category": "update",
+    "title": "영어 발음 평가 AI 업데이트 - 15차",
+    "content": "<h2>영어 발음 평가 AI 개선</h2><p>더욱 정확한 발음 평가를 위해 AI 모델을 업데이트했습니다.</p><p><img src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNmM2U1ZjUiLz4KICAgICAgPHJlY3QgeD0iODAiIHk9IjgwIiB3aWR0aD0iMjQwIiBoZWlnaHQ9IjE0MCIgcng9IjIwIiBmaWxsPSIjN2IxZmEyIiBvcGFjaXR5PSIwLjciLz4KICAgICAgPHJlY3QgeD0iMTAwIiB5PSIxMDAiIHdpZHRoPSIyMDAiIGhlaWdodD0iMTAwIiByeD0iMTUiIGZpbGw9IiM5YzI3YjAiIG9wYWNpdHk9IjAuNiIvPgogICAgICA8cmVjdCB4PSIxMjAiIHk9IjEyMCIgd2lkdGg9IjE2MCIgaGVpZ2h0PSI2MCIgcng9IjEwIiBmaWxsPSIjYmE2OGM4IiBvcGFjaXR5PSIwLjUiLz4KICAgIDwvc3ZnPg==\" width=\"400\" /></p><h3>주요 개선 사항</h3><ul><li>발음 정확도 인식률 20% 향상</li><li>억양 분석 기능 추가</li><li>실시간 피드백 속도 개선</li></ul><p>업데이트된 기능을 지금 바로 체험해보세요!</p>",
+    "createdAt": "2025-08-18T21:55:39.406Z",
+    "updatedAt": "2025-08-18T21:55:39.406Z",
+    "viewCount": 433,
+    "isPinned": false,
+    "showInBanner": false,
+    "showAsModal": false,
+    "priority": 2,
+    "author": {
+      "id": "admin",
+      "name": "관리자"
+    },
+    "status": "published",
+    "history": [
+      {
+        "action": "created",
+        "timestamp": "2025-08-18T21:55:39.406Z",
+        "status": "draft"
+      },
+      {
+        "action": "published",
+        "timestamp": "2025-08-18T21:55:40.406Z",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "id": "175539504333743",
+    "category": "announcement",
+    "title": "학생 계정 관리 안내 - 32차",
+    "content": "<h2>학생 계정 설정 및 관리</h2><p><img src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNmZmYzZTAiLz4KICAgICAgPHJlY3QgeD0iNTAiIHk9IjUwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iI2Y1N2MwMCIgb3BhY2l0eT0iMC43Ii8+CiAgICAgIDxyZWN0IHg9IjE4MCIgeT0iODAiIHdpZHRoPSIxMjAiIGhlaWdodD0iODAiIGZpbGw9IiNmYjhjMDAiIG9wYWNpdHk9IjAuNiIvPgogICAgICA8cmVjdCB4PSIxMjAiIHk9IjE2MCIgd2lkdGg9IjE2MCIgaGVpZ2h0PSI5MCIgZmlsbD0iI2ZmYTcyNiIgb3BhY2l0eT0iMC41Ii8+CiAgICA8L3N2Zz4=\" width=\"350\" /></p><p>학생들의 안전한 학습 환경을 위해 계정 관리가 중요합니다.</p><h3>권장 사항</h3><ul><li>비밀번호 정기적 변경</li><li>개인정보 보호 설정 확인</li><li>학습 시간 제한 설정</li></ul>",
+    "createdAt": "2025-08-17T01:44:03.337Z",
+    "updatedAt": "2025-08-17T01:44:03.337Z",
+    "viewCount": 33,
+    "isPinned": false,
+    "showInBanner": false,
+    "showAsModal": false,
+    "priority": 3,
+    "author": {
+      "id": "admin",
+      "name": "관리자"
+    },
+    "status": "published",
+    "history": [
+      {
+        "action": "created",
+        "timestamp": "2025-08-17T01:44:03.337Z",
+        "status": "draft"
+      },
+      {
+        "action": "published",
+        "timestamp": "2025-08-17T01:44:04.337Z",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "id": "17543738048794",
+    "category": "event",
+    "title": "AI 영어 말하기 챌린지 이벤트",
+    "content": "<h2>AI와 함께하는 영어 말하기 도전!</h2><p><img src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNmY2U0ZWMiLz4KICAgICAgPHBvbHlnb24gcG9pbnRzPSIyMDAsODAgMjQwLDE2MCAyMDAsMjQwIDE2MCwxNjAiIGZpbGw9IiNjMjE4NWIiIG9wYWNpdHk9IjAuNyIvPgogICAgICA8cG9seWdvbiBwb2ludHM9IjIwMCwxMDAgMjMwLDE1MCAyMDAsMjAwIDE3MCwxNTAiIGZpbGw9IiNlOTFlNjMiIG9wYWNpdHk9IjAuNiIvPgogICAgICA8Y2lyY2xlIGN4PSIyMDAiIGN5PSIxNTAiIHI9IjI1IiBmaWxsPSIjZjA2MjkyIiBvcGFjaXR5PSIwLjgiLz4KICAgIDwvc3ZnPg==\" width=\"400\" /></p><p><strong>이벤트 기간:</strong> 2025년 6월 1일 ~ 6월 30일</p><h3>참여 방법</h3><ol><li>매일 AI 튜터와 영어 대화 5분 이상</li><li>발음 점수 80점 이상 획득</li><li>한 달간 20일 이상 참여</li></ol><h3>보상</h3><p>우수 참여자 30명에게 추가 학습 크레딧 지급!</p>",
+    "createdAt": "2025-08-05T06:03:24.879Z",
+    "updatedAt": "2025-08-05T06:03:24.879Z",
+    "viewCount": 478,
+    "isPinned": false,
+    "showInBanner": false,
+    "showAsModal": false,
+    "priority": 2,
+    "author": {
+      "id": "admin",
+      "name": "관리자"
+    },
+    "status": "published",
+    "history": [
+      {
+        "action": "created",
+        "timestamp": "2025-08-05T06:03:24.879Z",
+        "status": "draft"
+      },
+      {
+        "action": "published",
+        "timestamp": "2025-08-05T06:03:25.879Z",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "id": "175425773914015",
+    "category": "update",
+    "title": "수학 문제 풀이 AI 신규 기능 추가 - 4차",
+    "content": "<h2>단계별 풀이 과정 설명 기능</h2><p><img src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNlM2YyZmQiLz4KICAgICAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iMTUwIiByPSI4MCIgZmlsbD0iIzE5NzZkMiIgb3BhY2l0eT0iMC43Ii8+CiAgICAgIDxjaXJjbGUgY3g9IjE1MCIgY3k9IjEyMCIgcj0iNDAiIGZpbGw9IiM0MmE1ZjUiIG9wYWNpdHk9IjAuNiIvPgogICAgICA8Y2lyY2xlIGN4PSIyNTAiIGN5PSIxODAiIHI9IjUwIiBmaWxsPSIjNjRiNWY2IiBvcGFjaXR5PSIwLjYiLz4KICAgIDwvc3ZnPg==\" width=\"380\" /></p><p>이제 수학 문제 풀이 시 단계별로 상세한 설명을 제공합니다.</p><ul><li>각 단계마다 상세 설명</li><li>관련 개념 링크 제공</li><li>유사 문제 추천</li></ul>",
+    "createdAt": "2025-08-03T21:48:59.140Z",
+    "updatedAt": "2025-08-03T21:48:59.140Z",
+    "viewCount": 106,
+    "isPinned": false,
+    "showInBanner": false,
+    "showAsModal": false,
+    "priority": 2,
+    "author": {
+      "id": "admin",
+      "name": "관리자"
+    },
+    "status": "published",
+    "history": [
+      {
+        "action": "created",
+        "timestamp": "2025-08-03T21:48:59.140Z",
+        "status": "draft"
+      },
+      {
+        "action": "published",
+        "timestamp": "2025-08-03T21:49:00.140Z",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "id": "175423374060039",
+    "category": "update",
+    "title": "수학 문제 풀이 AI 신규 기능 추가 - 28차",
+    "content": "<h2>단계별 풀이 과정 설명 기능</h2><p><img src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNlM2YyZmQiLz4KICAgICAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iMTUwIiByPSI4MCIgZmlsbD0iIzE5NzZkMiIgb3BhY2l0eT0iMC43Ii8+CiAgICAgIDxjaXJjbGUgY3g9IjE1MCIgY3k9IjEyMCIgcj0iNDAiIGZpbGw9IiM0MmE1ZjUiIG9wYWNpdHk9IjAuNiIvPgogICAgICA8Y2lyY2xlIGN4PSIyNTAiIGN5PSIxODAiIHI9IjUwIiBmaWxsPSIjNjRiNWY2IiBvcGFjaXR5PSIwLjYiLz4KICAgIDwvc3ZnPg==\" width=\"380\" /></p><p>이제 수학 문제 풀이 시 단계별로 상세한 설명을 제공합니다.</p><ul><li>각 단계마다 상세 설명</li><li>관련 개념 링크 제공</li><li>유사 문제 추천</li></ul>",
+    "createdAt": "2025-08-03T15:09:00.600Z",
+    "updatedAt": "2025-08-03T15:09:00.600Z",
+    "viewCount": 451,
+    "isPinned": false,
+    "showInBanner": false,
+    "showAsModal": false,
+    "priority": 2,
+    "author": {
+      "id": "admin",
+      "name": "관리자"
+    },
+    "status": "published",
+    "history": [
+      {
+        "action": "created",
+        "timestamp": "2025-08-03T15:09:00.600Z",
+        "status": "draft"
+      },
+      {
+        "action": "published",
+        "timestamp": "2025-08-03T15:09:01.600Z",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "id": "175400286998922",
+    "category": "announcement",
+    "title": "영어 독해 AI - 고등 과정 오픈 - 11차",
+    "content": "<h2>고등학교 영어 독해 과정</h2><p><img src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNmM2U1ZjUiLz4KICAgICAgPHJlY3QgeD0iODAiIHk9IjgwIiB3aWR0aD0iMjQwIiBoZWlnaHQ9IjE0MCIgcng9IjIwIiBmaWxsPSIjN2IxZmEyIiBvcGFjaXR5PSIwLjciLz4KICAgICAgPHJlY3QgeD0iMTAwIiB5PSIxMDAiIHdpZHRoPSIyMDAiIGhlaWdodD0iMTAwIiByeD0iMTUiIGZpbGw9IiM5YzI3YjAiIG9wYWNpdHk9IjAuNiIvPgogICAgICA8cmVjdCB4PSIxMjAiIHk9IjEyMCIgd2lkdGg9IjE2MCIgaGVpZ2h0PSI2MCIgcng9IjEwIiBmaWxsPSIjYmE2OGM4IiBvcGFjaXR5PSIwLjUiLz4KICAgIDwvc3ZnPg==\" width=\"400\" /></p><p>고등학생을 위한 심화 영어 독해 과정이 오픈되었습니다.</p><h3>특징</h3><ul><li>수능 유형 독해 문제</li><li>문단별 상세 해설</li><li>어휘 자동 정리</li><li>AI 기반 오답 분석</li></ul>",
+    "createdAt": "2025-07-31T23:01:09.989Z",
+    "updatedAt": "2025-07-31T23:01:09.989Z",
+    "viewCount": 439,
+    "isPinned": false,
+    "showInBanner": false,
+    "showAsModal": false,
+    "priority": 3,
+    "expireAt": "2025-07-31T08:01",
+    "author": {
+      "id": "admin",
+      "name": "관리자"
+    },
+    "status": "expired",
+    "history": [
+      {
+        "action": "created",
+        "timestamp": "2025-07-31T23:01:09.989Z",
+        "status": "draft"
+      },
+      {
+        "action": "published",
+        "timestamp": "2025-07-31T23:01:10.989Z",
+        "status": "published"
+      },
+      {
+        "action": "expired",
+        "timestamp": "2025-08-02T23:01:09.989Z",
+        "status": "expired",
+        "note": "관리자가 수동으로 숨김 처리함"
+      }
+    ]
+  },
+  {
+    "id": "175369945059848",
+    "category": "urgent",
+    "title": "AIDT 시스템 긴급 점검 안내 - 37차",
+    "content": "<h2>긴급 시스템 점검 안내</h2><p>보다 안정적인 서비스 제공을 위해 긴급 시스템 점검을 실시합니다.</p><p><img src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNmZmYzZTAiLz4KICAgICAgPHJlY3QgeD0iNTAiIHk9IjUwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iI2Y1N2MwMCIgb3BhY2l0eT0iMC43Ii8+CiAgICAgIDxyZWN0IHg9IjE4MCIgeT0iODAiIHdpZHRoPSIxMjAiIGhlaWdodD0iODAiIGZpbGw9IiNmYjhjMDAiIG9wYWNpdHk9IjAuNiIvPgogICAgICA8cmVjdCB4PSIxMjAiIHk9IjE2MCIgd2lkdGg9IjE2MCIgaGVpZ2h0PSI5MCIgZmlsbD0iI2ZmYTcyNiIgb3BhY2l0eT0iMC41Ii8+CiAgICA8L3N2Zz4=\" width=\"400\" /></p><p><strong>점검 일시:</strong> 2025년 5월 15일 02:00 ~ 04:00</p><p><strong>영향 범위:</strong> 전체 서비스 일시 중단</p><p>점검 시간 동안 서비스 이용이 불가하오니 양해 부탁드립니다.</p>",
+    "createdAt": "2025-07-28T10:44:10.598Z",
+    "updatedAt": "2025-07-28T10:44:10.598Z",
+    "viewCount": 78,
+    "isPinned": false,
+    "showInBanner": false,
+    "showAsModal": false,
+    "priority": 1,
+    "author": {
+      "id": "admin",
+      "name": "관리자"
+    },
+    "status": "published",
+    "history": [
+      {
+        "action": "created",
+        "timestamp": "2025-07-28T10:44:10.598Z",
+        "status": "draft"
+      },
+      {
+        "action": "published",
+        "timestamp": "2025-07-28T10:44:11.598Z",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "id": "17527631996696",
+    "category": "announcement",
+    "title": "AIDT 플랫폼 사용 가이드",
+    "content": "<h2>선생님을 위한 AIDT 활용 가이드</h2><p><img src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNlOGY1ZTkiLz4KICAgICAgPHBvbHlnb24gcG9pbnRzPSIyMDAsNTAgMzAwLDE1MCAyMDAsMjUwIDEwMCwxNTAiIGZpbGw9IiMzODhlM2MiIG9wYWNpdHk9IjAuNyIvPgogICAgICA8cG9seWdvbiBwb2ludHM9IjIwMCw4MCAyNzAsMTUwIDIwMCwyMjAgMTMwLDE1MCIgZmlsbD0iIzY2YmI2YSIgb3BhY2l0eT0iMC42Ii8+CiAgICAgIDxjaXJjbGUgY3g9IjIwMCIgY3k9IjE1MCIgcj0iMzAiIGZpbGw9IiM4MWM3ODQiIG9wYWNpdHk9IjAuOCIvPgogICAgPC9zdmc+\" width=\"400\" /></p><h3>주요 기능</h3><ul><li><strong>학습 진도 추적:</strong> 실시간으로 학생들의 학습 현황 확인</li><li><strong>AI 과제 생성:</strong> 학생 수준에 맞는 맞춤형 과제 자동 생성</li><li><strong>성적 분석:</strong> AI 기반 성적 분석 및 개선 방안 제시</li></ul><p>자세한 사용 방법은 도움말 센터를 참고해주세요.</p>",
+    "createdAt": "2025-07-17T14:39:59.669Z",
+    "updatedAt": "2025-07-17T14:39:59.669Z",
+    "viewCount": 282,
+    "isPinned": false,
+    "showInBanner": false,
+    "showAsModal": false,
+    "priority": 3,
+    "author": {
+      "id": "admin",
+      "name": "관리자"
+    },
+    "status": "published",
+    "history": [
+      {
+        "action": "created",
+        "timestamp": "2025-07-17T14:39:59.669Z",
+        "status": "draft"
+      },
+      {
+        "action": "published",
+        "timestamp": "2025-07-17T14:40:00.669Z",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "id": "175258008792410",
+    "category": "announcement",
+    "title": "영어 독해 AI - 고등 과정 오픈",
+    "content": "<h2>고등학교 영어 독해 과정</h2><p><img src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNmM2U1ZjUiLz4KICAgICAgPHJlY3QgeD0iODAiIHk9IjgwIiB3aWR0aD0iMjQwIiBoZWlnaHQ9IjE0MCIgcng9IjIwIiBmaWxsPSIjN2IxZmEyIiBvcGFjaXR5PSIwLjciLz4KICAgICAgPHJlY3QgeD0iMTAwIiB5PSIxMDAiIHdpZHRoPSIyMDAiIGhlaWdodD0iMTAwIiByeD0iMTUiIGZpbGw9IiM5YzI3YjAiIG9wYWNpdHk9IjAuNiIvPgogICAgICA8cmVjdCB4PSIxMjAiIHk9IjEyMCIgd2lkdGg9IjE2MCIgaGVpZ2h0PSI2MCIgcng9IjEwIiBmaWxsPSIjYmE2OGM4IiBvcGFjaXR5PSIwLjUiLz4KICAgIDwvc3ZnPg==\" width=\"400\" /></p><p>고등학생을 위한 심화 영어 독해 과정이 오픈되었습니다.</p><h3>특징</h3><ul><li>수능 유형 독해 문제</li><li>문단별 상세 해설</li><li>어휘 자동 정리</li><li>AI 기반 오답 분석</li></ul>",
+    "createdAt": "2025-07-15T11:48:07.924Z",
+    "updatedAt": "2025-07-15T11:48:07.924Z",
+    "viewCount": 389,
+    "isPinned": false,
+    "showInBanner": false,
+    "showAsModal": false,
+    "priority": 3,
+    "author": {
+      "id": "admin",
+      "name": "관리자"
+    },
+    "status": "draft",
+    "history": [
+      {
+        "action": "created",
+        "timestamp": "2025-07-15T11:48:07.924Z",
+        "status": "draft",
+        "note": "임시저장됨"
+      }
+    ]
+  },
+  {
+    "id": "17511816196963",
+    "category": "update",
+    "title": "수학 문제 풀이 AI 신규 기능 추가",
+    "content": "<h2>단계별 풀이 과정 설명 기능</h2><p><img src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNlM2YyZmQiLz4KICAgICAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iMTUwIiByPSI4MCIgZmlsbD0iIzE5NzZkMiIgb3BhY2l0eT0iMC43Ii8+CiAgICAgIDxjaXJjbGUgY3g9IjE1MCIgY3k9IjEyMCIgcj0iNDAiIGZpbGw9IiM0MmE1ZjUiIG9wYWNpdHk9IjAuNiIvPgogICAgICA8Y2lyY2xlIGN4PSIyNTAiIGN5PSIxODAiIHI9IjUwIiBmaWxsPSIjNjRiNWY2IiBvcGFjaXR5PSIwLjYiLz4KICAgIDwvc3ZnPg==\" width=\"380\" /></p><p>이제 수학 문제 풀이 시 단계별로 상세한 설명을 제공합니다.</p><ul><li>각 단계마다 상세 설명</li><li>관련 개념 링크 제공</li><li>유사 문제 추천</li></ul>",
+    "createdAt": "2025-06-29T07:20:19.696Z",
+    "updatedAt": "2025-06-29T07:20:19.696Z",
+    "viewCount": 288,
+    "isPinned": false,
+    "showInBanner": false,
+    "showAsModal": false,
+    "priority": 2,
+    "author": {
+      "id": "admin",
+      "name": "관리자"
+    },
+    "status": "published",
+    "history": [
+      {
+        "action": "created",
+        "timestamp": "2025-06-29T07:20:19.696Z",
+        "status": "draft"
+      },
+      {
+        "action": "published",
+        "timestamp": "2025-06-29T07:20:20.696Z",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "id": "175114848143344",
+    "category": "announcement",
+    "title": "수학 AI 튜터 - 중학 도형 특강 - 33차",
+    "content": "<h2>중학교 도형 완벽 정복</h2><p><img src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNlM2YyZmQiLz4KICAgICAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iMTUwIiByPSI4MCIgZmlsbD0iIzE5NzZkMiIgb3BhY2l0eT0iMC43Ii8+CiAgICAgIDxjaXJjbGUgY3g9IjE1MCIgY3k9IjEyMCIgcj0iNDAiIGZpbGw9IiM0MmE1ZjUiIG9wYWNpdHk9IjAuNiIvPgogICAgICA8Y2lyY2xlIGN4PSIyNTAiIGN5PSIxODAiIHI9IjUwIiBmaWxsPSIjNjRiNWY2IiBvcGFjaXR5PSIwLjYiLz4KICAgIDwvc3ZnPg==\" width=\"400\" /></p><p>AI 튜터와 함께 도형 문제를 정복해보세요.</p><h3>학습 내용</h3><ul><li>삼각형의 성질</li><li>사각형의 성질</li><li>원의 성질</li><li>입체도형</li></ul><p>각 단원별 개념 설명과 문제 풀이를 제공합니다.</p>",
+    "createdAt": "2025-06-28T22:08:01.433Z",
+    "updatedAt": "2025-06-28T22:08:01.433Z",
+    "viewCount": 484,
+    "isPinned": false,
+    "showInBanner": false,
+    "showAsModal": false,
+    "priority": 3,
+    "author": {
+      "id": "admin",
+      "name": "관리자"
+    },
+    "status": "published",
+    "history": [
+      {
+        "action": "created",
+        "timestamp": "2025-06-28T22:08:01.433Z",
+        "status": "draft"
+      },
+      {
+        "action": "published",
+        "timestamp": "2025-06-28T22:08:02.433Z",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "id": "17509417388408",
+    "category": "announcement",
+    "title": "수학 AI 튜터 - 중학 도형 특강",
+    "content": "<h2>중학교 도형 완벽 정복</h2><p><img src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNlM2YyZmQiLz4KICAgICAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iMTUwIiByPSI4MCIgZmlsbD0iIzE5NzZkMiIgb3BhY2l0eT0iMC43Ii8+CiAgICAgIDxjaXJjbGUgY3g9IjE1MCIgY3k9IjEyMCIgcj0iNDAiIGZpbGw9IiM0MmE1ZjUiIG9wYWNpdHk9IjAuNiIvPgogICAgICA8Y2lyY2xlIGN4PSIyNTAiIGN5PSIxODAiIHI9IjUwIiBmaWxsPSIjNjRiNWY2IiBvcGFjaXR5PSIwLjYiLz4KICAgIDwvc3ZnPg==\" width=\"400\" /></p><p>AI 튜터와 함께 도형 문제를 정복해보세요.</p><h3>학습 내용</h3><ul><li>삼각형의 성질</li><li>사각형의 성질</li><li>원의 성질</li><li>입체도형</li></ul><p>각 단원별 개념 설명과 문제 풀이를 제공합니다.</p>",
+    "createdAt": "2025-06-26T12:42:18.840Z",
+    "updatedAt": "2025-06-26T12:42:18.840Z",
+    "viewCount": 243,
+    "isPinned": false,
+    "showInBanner": false,
+    "showAsModal": false,
+    "priority": 3,
+    "author": {
+      "id": "admin",
+      "name": "관리자"
+    },
+    "status": "published",
+    "history": [
+      {
+        "action": "created",
+        "timestamp": "2025-06-26T12:42:18.840Z",
+        "status": "draft"
+      },
+      {
+        "action": "published",
+        "timestamp": "2025-06-26T12:42:19.840Z",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "id": "175017781608346",
+    "category": "announcement",
+    "title": "영어 독해 AI - 고등 과정 오픈 - 35차",
+    "content": "<h2>고등학교 영어 독해 과정</h2><p><img src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNmM2U1ZjUiLz4KICAgICAgPHJlY3QgeD0iODAiIHk9IjgwIiB3aWR0aD0iMjQwIiBoZWlnaHQ9IjE0MCIgcng9IjIwIiBmaWxsPSIjN2IxZmEyIiBvcGFjaXR5PSIwLjciLz4KICAgICAgPHJlY3QgeD0iMTAwIiB5PSIxMDAiIHdpZHRoPSIyMDAiIGhlaWdodD0iMTAwIiByeD0iMTUiIGZpbGw9IiM5YzI3YjAiIG9wYWNpdHk9IjAuNiIvPgogICAgICA8cmVjdCB4PSIxMjAiIHk9IjEyMCIgd2lkdGg9IjE2MCIgaGVpZ2h0PSI2MCIgcng9IjEwIiBmaWxsPSIjYmE2OGM4IiBvcGFjaXR5PSIwLjUiLz4KICAgIDwvc3ZnPg==\" width=\"400\" /></p><p>고등학생을 위한 심화 영어 독해 과정이 오픈되었습니다.</p><h3>특징</h3><ul><li>수능 유형 독해 문제</li><li>문단별 상세 해설</li><li>어휘 자동 정리</li><li>AI 기반 오답 분석</li></ul>",
+    "createdAt": "2025-06-17T16:30:16.083Z",
+    "updatedAt": "2025-06-17T16:30:16.083Z",
+    "viewCount": 125,
+    "isPinned": false,
+    "showInBanner": false,
+    "showAsModal": false,
+    "priority": 3,
+    "author": {
+      "id": "admin",
+      "name": "관리자"
+    },
+    "status": "published",
+    "history": [
+      {
+        "action": "created",
+        "timestamp": "2025-06-17T16:30:16.083Z",
+        "status": "draft"
+      },
+      {
+        "action": "published",
+        "timestamp": "2025-06-17T16:30:17.083Z",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "id": "174992223167345",
+    "category": "update",
+    "title": "수학 계산기 기능 업데이트 - 34차",
+    "content": "<h2>그래프 계산기 기능 추가</h2><p><img src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNlM2YyZmQiLz4KICAgICAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iMTUwIiByPSI4MCIgZmlsbD0iIzE5NzZkMiIgb3BhY2l0eT0iMC43Ii8+CiAgICAgIDxjaXJjbGUgY3g9IjE1MCIgY3k9IjEyMCIgcj0iNDAiIGZpbGw9IiM0MmE1ZjUiIG9wYWNpdHk9IjAuNiIvPgogICAgICA8Y2lyY2xlIGN4PSIyNTAiIGN5PSIxODAiIHI9IjUwIiBmaWxsPSIjNjRiNWY2IiBvcGFjaXR5PSIwLjYiLz4KICAgIDwvc3ZnPg==\" width=\"380\" /></p><p>수학 학습을 돕는 그래프 계산기 기능이 추가되었습니다.</p><ul><li>함수 그래프 시각화</li><li>교점 자동 계산</li><li>그래프 확대/축소</li></ul>",
+    "createdAt": "2025-06-14T17:30:31.673Z",
+    "updatedAt": "2025-06-14T17:30:31.673Z",
+    "viewCount": 412,
+    "isPinned": false,
+    "showInBanner": false,
+    "showAsModal": false,
+    "priority": 2,
+    "author": {
+      "id": "admin",
+      "name": "관리자"
+    },
+    "status": "published",
+    "history": [
+      {
+        "action": "created",
+        "timestamp": "2025-06-14T17:30:31.673Z",
+        "status": "draft"
+      },
+      {
+        "action": "published",
+        "timestamp": "2025-06-14T17:30:32.673Z",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "id": "174954639910147",
+    "category": "event",
+    "title": "영어 단어 암기 마라톤 - 36차",
+    "content": "<h2>30일 영어 단어 완성 챌린지</h2><p><img src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNmY2U0ZWMiLz4KICAgICAgPHBvbHlnb24gcG9pbnRzPSIyMDAsODAgMjQwLDE2MCAyMDAsMjQwIDE2MCwxNjAiIGZpbGw9IiNjMjE4NWIiIG9wYWNpdHk9IjAuNyIvPgogICAgICA8cG9seWdvbiBwb2ludHM9IjIwMCwxMDAgMjMwLDE1MCAyMDAsMjAwIDE3MCwxNTAiIGZpbGw9IiNlOTFlNjMiIG9wYWNpdHk9IjAuNiIvPgogICAgICA8Y2lyY2xlIGN4PSIyMDAiIGN5PSIxNTAiIHI9IjI1IiBmaWxsPSIjZjA2MjkyIiBvcGFjaXR5PSIwLjgiLz4KICAgIDwvc3ZnPg==\" width=\"380\" /></p><p><strong>기간:</strong> 2025년 7월 1일 ~ 7월 31일</p><h3>목표</h3><p>30일 동안 매일 20개씩 총 600개 단어 학습</p><h3>참여 혜택</h3><ul><li>학습 진도에 따른 배지 획득</li><li>완주 시 수료증 발급</li><li>우수 참가자 시상</li></ul>",
+    "createdAt": "2025-06-10T09:06:39.101Z",
+    "updatedAt": "2025-06-10T09:06:39.101Z",
+    "viewCount": 74,
+    "isPinned": false,
+    "showInBanner": false,
+    "showAsModal": false,
+    "priority": 2,
+    "author": {
+      "id": "admin",
+      "name": "관리자"
+    },
+    "status": "published",
+    "history": [
+      {
+        "action": "created",
+        "timestamp": "2025-06-10T09:06:39.101Z",
+        "status": "draft"
+      },
+      {
+        "action": "published",
+        "timestamp": "2025-06-10T09:06:40.101Z",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "id": "174899833572421",
+    "category": "update",
+    "title": "수학 계산기 기능 업데이트 - 10차",
+    "content": "<h2>그래프 계산기 기능 추가</h2><p><img src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNlM2YyZmQiLz4KICAgICAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iMTUwIiByPSI4MCIgZmlsbD0iIzE5NzZkMiIgb3BhY2l0eT0iMC43Ii8+CiAgICAgIDxjaXJjbGUgY3g9IjE1MCIgY3k9IjEyMCIgcj0iNDAiIGZpbGw9IiM0MmE1ZjUiIG9wYWNpdHk9IjAuNiIvPgogICAgICA8Y2lyY2xlIGN4PSIyNTAiIGN5PSIxODAiIHI9IjUwIiBmaWxsPSIjNjRiNWY2IiBvcGFjaXR5PSIwLjYiLz4KICAgIDwvc3ZnPg==\" width=\"380\" /></p><p>수학 학습을 돕는 그래프 계산기 기능이 추가되었습니다.</p><ul><li>함수 그래프 시각화</li><li>교점 자동 계산</li><li>그래프 확대/축소</li></ul>",
+    "createdAt": "2025-06-04T00:52:15.724Z",
+    "updatedAt": "2025-06-04T00:52:15.724Z",
+    "viewCount": 156,
+    "isPinned": false,
+    "showInBanner": false,
+    "showAsModal": false,
+    "priority": 2,
+    "publishAt": "2025-06-11T09:52",
+    "author": {
+      "id": "admin",
+      "name": "관리자"
+    },
+    "status": "scheduled",
+    "history": [
+      {
+        "action": "created",
+        "timestamp": "2025-06-04T00:52:15.724Z",
+        "status": "scheduled"
+      }
+    ]
+  },
+  {
+    "id": "174751549929518",
+    "category": "announcement",
+    "title": "AIDT 플랫폼 사용 가이드 - 7차",
+    "content": "<h2>선생님을 위한 AIDT 활용 가이드</h2><p><img src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNlOGY1ZTkiLz4KICAgICAgPHBvbHlnb24gcG9pbnRzPSIyMDAsNTAgMzAwLDE1MCAyMDAsMjUwIDEwMCwxNTAiIGZpbGw9IiMzODhlM2MiIG9wYWNpdHk9IjAuNyIvPgogICAgICA8cG9seWdvbiBwb2ludHM9IjIwMCw4MCAyNzAsMTUwIDIwMCwyMjAgMTMwLDE1MCIgZmlsbD0iIzY2YmI2YSIgb3BhY2l0eT0iMC42Ii8+CiAgICAgIDxjaXJjbGUgY3g9IjIwMCIgY3k9IjE1MCIgcj0iMzAiIGZpbGw9IiM4MWM3ODQiIG9wYWNpdHk9IjAuOCIvPgogICAgPC9zdmc+\" width=\"400\" /></p><h3>주요 기능</h3><ul><li><strong>학습 진도 추적:</strong> 실시간으로 학생들의 학습 현황 확인</li><li><strong>AI 과제 생성:</strong> 학생 수준에 맞는 맞춤형 과제 자동 생성</li><li><strong>성적 분석:</strong> AI 기반 성적 분석 및 개선 방안 제시</li></ul><p>자세한 사용 방법은 도움말 센터를 참고해주세요.</p>",
+    "createdAt": "2025-05-17T20:58:19.295Z",
+    "updatedAt": "2025-05-17T20:58:19.295Z",
+    "viewCount": 260,
+    "isPinned": false,
+    "showInBanner": false,
+    "showAsModal": false,
+    "priority": 3,
+    "author": {
+      "id": "admin",
+      "name": "관리자"
+    },
+    "status": "published",
+    "history": [
+      {
+        "action": "created",
+        "timestamp": "2025-05-17T20:58:19.295Z",
+        "status": "draft"
+      },
+      {
+        "action": "published",
+        "timestamp": "2025-05-17T20:58:20.295Z",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "id": "174655026992649",
+    "category": "urgent",
+    "title": "수학 AI 튜터 서비스 장애 복구 완료 - 38차",
+    "content": "<h2>서비스 복구 안내</h2><p>일시적으로 발생한 수학 AI 튜터 서비스 장애가 복구되었습니다.</p><p><img src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNlM2YyZmQiLz4KICAgICAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iMTUwIiByPSI4MCIgZmlsbD0iIzE5NzZkMiIgb3BhY2l0eT0iMC43Ii8+CiAgICAgIDxjaXJjbGUgY3g9IjE1MCIgY3k9IjEyMCIgcj0iNDAiIGZpbGw9IiM0MmE1ZjUiIG9wYWNpdHk9IjAuNiIvPgogICAgICA8Y2lyY2xlIGN4PSIyNTAiIGN5PSIxODAiIHI9IjUwIiBmaWxsPSIjNjRiNWY2IiBvcGFjaXR5PSIwLjYiLz4KICAgIDwvc3ZnPg==\" width=\"350\" /></p><p>이용에 불편을 드려 죄송합니다.</p>",
+    "createdAt": "2025-05-06T16:51:09.926Z",
+    "updatedAt": "2025-05-06T16:51:09.926Z",
+    "viewCount": 226,
+    "isPinned": false,
+    "showInBanner": false,
+    "showAsModal": false,
+    "priority": 1,
+    "author": {
+      "id": "admin",
+      "name": "관리자"
+    },
+    "status": "published",
+    "history": [
+      {
+        "action": "created",
+        "timestamp": "2025-05-06T16:51:09.926Z",
+        "status": "draft"
+      },
+      {
+        "action": "published",
+        "timestamp": "2025-05-06T16:51:10.926Z",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "id": "174601104327528",
+    "category": "event",
+    "title": "AI 영어 말하기 챌린지 이벤트 - 17차",
+    "content": "<h2>AI와 함께하는 영어 말하기 도전!</h2><p><img src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNmY2U0ZWMiLz4KICAgICAgPHBvbHlnb24gcG9pbnRzPSIyMDAsODAgMjQwLDE2MCAyMDAsMjQwIDE2MCwxNjAiIGZpbGw9IiNjMjE4NWIiIG9wYWNpdHk9IjAuNyIvPgogICAgICA8cG9seWdvbiBwb2ludHM9IjIwMCwxMDAgMjMwLDE1MCAyMDAsMjAwIDE3MCwxNTAiIGZpbGw9IiNlOTFlNjMiIG9wYWNpdHk9IjAuNiIvPgogICAgICA8Y2lyY2xlIGN4PSIyMDAiIGN5PSIxNTAiIHI9IjI1IiBmaWxsPSIjZjA2MjkyIiBvcGFjaXR5PSIwLjgiLz4KICAgIDwvc3ZnPg==\" width=\"400\" /></p><p><strong>이벤트 기간:</strong> 2025년 6월 1일 ~ 6월 30일</p><h3>참여 방법</h3><ol><li>매일 AI 튜터와 영어 대화 5분 이상</li><li>발음 점수 80점 이상 획득</li><li>한 달간 20일 이상 참여</li></ol><h3>보상</h3><p>우수 참여자 30명에게 추가 학습 크레딧 지급!</p>",
+    "createdAt": "2025-04-30T11:04:03.275Z",
+    "updatedAt": "2025-04-30T11:04:03.275Z",
+    "viewCount": 150,
+    "isPinned": false,
+    "showInBanner": false,
+    "showAsModal": false,
+    "priority": 2,
+    "author": {
+      "id": "admin",
+      "name": "관리자"
+    },
+    "status": "published",
+    "history": [
+      {
+        "action": "created",
+        "timestamp": "2025-04-30T11:04:03.275Z",
+        "status": "draft"
+      },
+      {
+        "action": "published",
+        "timestamp": "2025-04-30T11:04:04.275Z",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "id": "174555352048420",
+    "category": "announcement",
+    "title": "수학 AI 튜터 - 중학 도형 특강 - 9차",
+    "content": "<h2>중학교 도형 완벽 정복</h2><p><img src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNlM2YyZmQiLz4KICAgICAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iMTUwIiByPSI4MCIgZmlsbD0iIzE5NzZkMiIgb3BhY2l0eT0iMC43Ii8+CiAgICAgIDxjaXJjbGUgY3g9IjE1MCIgY3k9IjEyMCIgcj0iNDAiIGZpbGw9IiM0MmE1ZjUiIG9wYWNpdHk9IjAuNiIvPgogICAgICA8Y2lyY2xlIGN4PSIyNTAiIGN5PSIxODAiIHI9IjUwIiBmaWxsPSIjNjRiNWY2IiBvcGFjaXR5PSIwLjYiLz4KICAgIDwvc3ZnPg==\" width=\"400\" /></p><p>AI 튜터와 함께 도형 문제를 정복해보세요.</p><h3>학습 내용</h3><ul><li>삼각형의 성질</li><li>사각형의 성질</li><li>원의 성질</li><li>입체도형</li></ul><p>각 단원별 개념 설명과 문제 풀이를 제공합니다.</p>",
+    "createdAt": "2025-04-25T03:58:40.484Z",
+    "updatedAt": "2025-04-25T03:58:40.484Z",
+    "viewCount": 8,
+    "isPinned": false,
+    "showInBanner": false,
+    "showAsModal": false,
+    "priority": 3,
+    "author": {
+      "id": "admin",
+      "name": "관리자"
+    },
+    "status": "draft",
+    "history": [
+      {
+        "action": "created",
+        "timestamp": "2025-04-25T03:58:40.484Z",
+        "status": "draft",
+        "note": "임시저장됨"
+      }
+    ]
+  },
+  {
+    "id": "174551421217924",
+    "category": "urgent",
+    "title": "AIDT 시스템 긴급 점검 안내 - 13차",
+    "content": "<h2>긴급 시스템 점검 안내</h2><p>보다 안정적인 서비스 제공을 위해 긴급 시스템 점검을 실시합니다.</p><p><img src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNmZmYzZTAiLz4KICAgICAgPHJlY3QgeD0iNTAiIHk9IjUwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iI2Y1N2MwMCIgb3BhY2l0eT0iMC43Ii8+CiAgICAgIDxyZWN0IHg9IjE4MCIgeT0iODAiIHdpZHRoPSIxMjAiIGhlaWdodD0iODAiIGZpbGw9IiNmYjhjMDAiIG9wYWNpdHk9IjAuNiIvPgogICAgICA8cmVjdCB4PSIxMjAiIHk9IjE2MCIgd2lkdGg9IjE2MCIgaGVpZ2h0PSI5MCIgZmlsbD0iI2ZmYTcyNiIgb3BhY2l0eT0iMC41Ii8+CiAgICA8L3N2Zz4=\" width=\"400\" /></p><p><strong>점검 일시:</strong> 2025년 5월 15일 02:00 ~ 04:00</p><p><strong>영향 범위:</strong> 전체 서비스 일시 중단</p><p>점검 시간 동안 서비스 이용이 불가하오니 양해 부탁드립니다.</p>",
+    "createdAt": "2025-04-24T17:03:32.179Z",
+    "updatedAt": "2025-04-24T17:03:32.179Z",
+    "viewCount": 94,
+    "isPinned": false,
+    "showInBanner": false,
+    "showAsModal": false,
+    "priority": 1,
+    "author": {
+      "id": "admin",
+      "name": "관리자"
+    },
+    "status": "published",
+    "history": [
+      {
+        "action": "created",
+        "timestamp": "2025-04-24T17:03:32.179Z",
+        "status": "draft"
+      },
+      {
+        "action": "published",
+        "timestamp": "2025-04-24T17:03:33.179Z",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "id": "174502676135432",
+    "category": "announcement",
+    "title": "수학 AI 튜터 - 중학 도형 특강 - 21차",
+    "content": "<h2>중학교 도형 완벽 정복</h2><p><img src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNlM2YyZmQiLz4KICAgICAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iMTUwIiByPSI4MCIgZmlsbD0iIzE5NzZkMiIgb3BhY2l0eT0iMC43Ii8+CiAgICAgIDxjaXJjbGUgY3g9IjE1MCIgY3k9IjEyMCIgcj0iNDAiIGZpbGw9IiM0MmE1ZjUiIG9wYWNpdHk9IjAuNiIvPgogICAgICA8Y2lyY2xlIGN4PSIyNTAiIGN5PSIxODAiIHI9IjUwIiBmaWxsPSIjNjRiNWY2IiBvcGFjaXR5PSIwLjYiLz4KICAgIDwvc3ZnPg==\" width=\"400\" /></p><p>AI 튜터와 함께 도형 문제를 정복해보세요.</p><h3>학습 내용</h3><ul><li>삼각형의 성질</li><li>사각형의 성질</li><li>원의 성질</li><li>입체도형</li></ul><p>각 단원별 개념 설명과 문제 풀이를 제공합니다.</p>",
+    "createdAt": "2025-04-19T01:39:21.354Z",
+    "updatedAt": "2025-04-19T01:39:21.354Z",
+    "viewCount": 349,
+    "isPinned": false,
+    "showInBanner": false,
+    "showAsModal": false,
+    "priority": 3,
+    "expireAt": "2025-04-18T10:39",
+    "author": {
+      "id": "admin",
+      "name": "관리자"
+    },
+    "status": "expired",
+    "history": [
+      {
+        "action": "created",
+        "timestamp": "2025-04-19T01:39:21.354Z",
+        "status": "draft"
+      },
+      {
+        "action": "published",
+        "timestamp": "2025-04-19T01:39:22.354Z",
+        "status": "published"
+      },
+      {
+        "action": "expired",
+        "timestamp": "2025-04-21T01:39:21.354Z",
+        "status": "expired",
+        "note": "관리자가 수동으로 숨김 처리함"
+      }
+    ]
+  },
+  {
+    "id": "174492359467833",
+    "category": "update",
+    "title": "수학 계산기 기능 업데이트 - 22차",
+    "content": "<h2>그래프 계산기 기능 추가</h2><p><img src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNlM2YyZmQiLz4KICAgICAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iMTUwIiByPSI4MCIgZmlsbD0iIzE5NzZkMiIgb3BhY2l0eT0iMC43Ii8+CiAgICAgIDxjaXJjbGUgY3g9IjE1MCIgY3k9IjEyMCIgcj0iNDAiIGZpbGw9IiM0MmE1ZjUiIG9wYWNpdHk9IjAuNiIvPgogICAgICA8Y2lyY2xlIGN4PSIyNTAiIGN5PSIxODAiIHI9IjUwIiBmaWxsPSIjNjRiNWY2IiBvcGFjaXR5PSIwLjYiLz4KICAgIDwvc3ZnPg==\" width=\"380\" /></p><p>수학 학습을 돕는 그래프 계산기 기능이 추가되었습니다.</p><ul><li>함수 그래프 시각화</li><li>교점 자동 계산</li><li>그래프 확대/축소</li></ul>",
+    "createdAt": "2025-04-17T20:59:54.678Z",
+    "updatedAt": "2025-04-17T20:59:54.678Z",
+    "viewCount": 345,
+    "isPinned": false,
+    "showInBanner": false,
+    "showAsModal": false,
+    "priority": 2,
+    "author": {
+      "id": "admin",
+      "name": "관리자"
+    },
+    "status": "published",
+    "history": [
+      {
+        "action": "created",
+        "timestamp": "2025-04-17T20:59:54.678Z",
+        "status": "draft"
+      },
+      {
+        "action": "published",
+        "timestamp": "2025-04-17T20:59:55.678Z",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "id": "174452319586642",
+    "category": "announcement",
+    "title": "AIDT 플랫폼 사용 가이드 - 31차",
+    "content": "<h2>선생님을 위한 AIDT 활용 가이드</h2><p><img src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNlOGY1ZTkiLz4KICAgICAgPHBvbHlnb24gcG9pbnRzPSIyMDAsNTAgMzAwLDE1MCAyMDAsMjUwIDEwMCwxNTAiIGZpbGw9IiMzODhlM2MiIG9wYWNpdHk9IjAuNyIvPgogICAgICA8cG9seWdvbiBwb2ludHM9IjIwMCw4MCAyNzAsMTUwIDIwMCwyMjAgMTMwLDE1MCIgZmlsbD0iIzY2YmI2YSIgb3BhY2l0eT0iMC42Ii8+CiAgICAgIDxjaXJjbGUgY3g9IjIwMCIgY3k9IjE1MCIgcj0iMzAiIGZpbGw9IiM4MWM3ODQiIG9wYWNpdHk9IjAuOCIvPgogICAgPC9zdmc+\" width=\"400\" /></p><h3>주요 기능</h3><ul><li><strong>학습 진도 추적:</strong> 실시간으로 학생들의 학습 현황 확인</li><li><strong>AI 과제 생성:</strong> 학생 수준에 맞는 맞춤형 과제 자동 생성</li><li><strong>성적 분석:</strong> AI 기반 성적 분석 및 개선 방안 제시</li></ul><p>자세한 사용 방법은 도움말 센터를 참고해주세요.</p>",
+    "createdAt": "2025-04-13T05:46:35.866Z",
+    "updatedAt": "2025-04-13T05:46:35.866Z",
+    "viewCount": 270,
+    "isPinned": false,
+    "showInBanner": false,
+    "showAsModal": false,
+    "priority": 3,
+    "expireAt": "2025-04-12T14:46",
+    "author": {
+      "id": "admin",
+      "name": "관리자"
+    },
+    "status": "expired",
+    "history": [
+      {
+        "action": "created",
+        "timestamp": "2025-04-13T05:46:35.866Z",
+        "status": "draft"
+      },
+      {
+        "action": "published",
+        "timestamp": "2025-04-13T05:46:36.866Z",
+        "status": "published"
+      },
+      {
+        "action": "expired",
+        "timestamp": "2025-04-15T05:46:35.866Z",
+        "status": "expired",
+        "note": "관리자가 수동으로 숨김 처리함"
+      }
+    ]
+  },
+  {
+    "id": "17442436550027",
+    "category": "announcement",
+    "title": "학생 계정 관리 안내",
+    "content": "<h2>학생 계정 설정 및 관리</h2><p><img src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNmZmYzZTAiLz4KICAgICAgPHJlY3QgeD0iNTAiIHk9IjUwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iI2Y1N2MwMCIgb3BhY2l0eT0iMC43Ii8+CiAgICAgIDxyZWN0IHg9IjE4MCIgeT0iODAiIHdpZHRoPSIxMjAiIGhlaWdodD0iODAiIGZpbGw9IiNmYjhjMDAiIG9wYWNpdHk9IjAuNiIvPgogICAgICA8cmVjdCB4PSIxMjAiIHk9IjE2MCIgd2lkdGg9IjE2MCIgaGVpZ2h0PSI5MCIgZmlsbD0iI2ZmYTcyNiIgb3BhY2l0eT0iMC41Ii8+CiAgICA8L3N2Zz4=\" width=\"350\" /></p><p>학생들의 안전한 학습 환경을 위해 계정 관리가 중요합니다.</p><h3>권장 사항</h3><ul><li>비밀번호 정기적 변경</li><li>개인정보 보호 설정 확인</li><li>학습 시간 제한 설정</li></ul>",
+    "createdAt": "2025-04-10T00:07:35.002Z",
+    "updatedAt": "2025-04-10T00:07:35.002Z",
+    "viewCount": 350,
+    "isPinned": false,
+    "showInBanner": false,
+    "showAsModal": false,
+    "priority": 3,
+    "author": {
+      "id": "admin",
+      "name": "관리자"
+    },
+    "status": "published",
+    "history": [
+      {
+        "action": "created",
+        "timestamp": "2025-04-10T00:07:35.002Z",
+        "status": "draft"
+      },
+      {
+        "action": "published",
+        "timestamp": "2025-04-10T00:07:36.002Z",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "id": "174403571125119",
+    "category": "announcement",
+    "title": "학생 계정 관리 안내 - 8차",
+    "content": "<h2>학생 계정 설정 및 관리</h2><p><img src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNmZmYzZTAiLz4KICAgICAgPHJlY3QgeD0iNTAiIHk9IjUwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iI2Y1N2MwMCIgb3BhY2l0eT0iMC43Ii8+CiAgICAgIDxyZWN0IHg9IjE4MCIgeT0iODAiIHdpZHRoPSIxMjAiIGhlaWdodD0iODAiIGZpbGw9IiNmYjhjMDAiIG9wYWNpdHk9IjAuNiIvPgogICAgICA8cmVjdCB4PSIxMjAiIHk9IjE2MCIgd2lkdGg9IjE2MCIgaGVpZ2h0PSI5MCIgZmlsbD0iI2ZmYTcyNiIgb3BhY2l0eT0iMC41Ii8+CiAgICA8L3N2Zz4=\" width=\"350\" /></p><p>학생들의 안전한 학습 환경을 위해 계정 관리가 중요합니다.</p><h3>권장 사항</h3><ul><li>비밀번호 정기적 변경</li><li>개인정보 보호 설정 확인</li><li>학습 시간 제한 설정</li></ul>",
+    "createdAt": "2025-04-07T14:21:51.251Z",
+    "updatedAt": "2025-04-07T14:21:51.251Z",
+    "viewCount": 342,
+    "isPinned": false,
+    "showInBanner": false,
+    "showAsModal": false,
+    "priority": 3,
+    "author": {
+      "id": "admin",
+      "name": "관리자"
+    },
+    "status": "published",
+    "history": [
+      {
+        "action": "created",
+        "timestamp": "2025-04-07T14:21:51.251Z",
+        "status": "draft"
+      },
+      {
+        "action": "published",
+        "timestamp": "2025-04-07T14:21:52.251Z",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "id": "174372214388040",
+    "category": "event",
+    "title": "AI 영어 말하기 챌린지 이벤트 - 29차",
+    "content": "<h2>AI와 함께하는 영어 말하기 도전!</h2><p><img src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNmY2U0ZWMiLz4KICAgICAgPHBvbHlnb24gcG9pbnRzPSIyMDAsODAgMjQwLDE2MCAyMDAsMjQwIDE2MCwxNjAiIGZpbGw9IiNjMjE4NWIiIG9wYWNpdHk9IjAuNyIvPgogICAgICA8cG9seWdvbiBwb2ludHM9IjIwMCwxMDAgMjMwLDE1MCAyMDAsMjAwIDE3MCwxNTAiIGZpbGw9IiNlOTFlNjMiIG9wYWNpdHk9IjAuNiIvPgogICAgICA8Y2lyY2xlIGN4PSIyMDAiIGN5PSIxNTAiIHI9IjI1IiBmaWxsPSIjZjA2MjkyIiBvcGFjaXR5PSIwLjgiLz4KICAgIDwvc3ZnPg==\" width=\"400\" /></p><p><strong>이벤트 기간:</strong> 2025년 6월 1일 ~ 6월 30일</p><h3>참여 방법</h3><ol><li>매일 AI 튜터와 영어 대화 5분 이상</li><li>발음 점수 80점 이상 획득</li><li>한 달간 20일 이상 참여</li></ol><h3>보상</h3><p>우수 참여자 30명에게 추가 학습 크레딧 지급!</p>",
+    "createdAt": "2025-04-03T23:15:43.880Z",
+    "updatedAt": "2025-04-03T23:15:43.880Z",
+    "viewCount": 267,
+    "isPinned": false,
+    "showInBanner": false,
+    "showAsModal": false,
+    "priority": 2,
+    "author": {
+      "id": "admin",
+      "name": "관리자"
+    },
+    "status": "draft",
+    "history": [
+      {
+        "action": "created",
+        "timestamp": "2025-04-03T23:15:43.880Z",
+        "status": "draft",
+        "note": "임시저장됨"
+      }
+    ]
+  },
+  {
+    "id": "17432262366929",
+    "category": "update",
+    "title": "수학 계산기 기능 업데이트",
+    "content": "<h2>그래프 계산기 기능 추가</h2><p><img src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNlM2YyZmQiLz4KICAgICAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iMTUwIiByPSI4MCIgZmlsbD0iIzE5NzZkMiIgb3BhY2l0eT0iMC43Ii8+CiAgICAgIDxjaXJjbGUgY3g9IjE1MCIgY3k9IjEyMCIgcj0iNDAiIGZpbGw9IiM0MmE1ZjUiIG9wYWNpdHk9IjAuNiIvPgogICAgICA8Y2lyY2xlIGN4PSIyNTAiIGN5PSIxODAiIHI9IjUwIiBmaWxsPSIjNjRiNWY2IiBvcGFjaXR5PSIwLjYiLz4KICAgIDwvc3ZnPg==\" width=\"380\" /></p><p>수학 학습을 돕는 그래프 계산기 기능이 추가되었습니다.</p><ul><li>함수 그래프 시각화</li><li>교점 자동 계산</li><li>그래프 확대/축소</li></ul>",
+    "createdAt": "2025-03-29T05:30:36.692Z",
+    "updatedAt": "2025-03-29T05:30:36.692Z",
+    "viewCount": 316,
+    "isPinned": false,
+    "showInBanner": false,
+    "showAsModal": false,
+    "priority": 2,
+    "author": {
+      "id": "admin",
+      "name": "관리자"
+    },
+    "status": "published",
+    "history": [
+      {
+        "action": "created",
+        "timestamp": "2025-03-29T05:30:36.692Z",
+        "status": "draft"
+      },
+      {
+        "action": "published",
+        "timestamp": "2025-03-29T05:30:37.692Z",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "id": "174280882119013",
+    "category": "urgent",
+    "title": "수학 AI 튜터 서비스 장애 복구 완료 - 2차",
+    "content": "<h2>서비스 복구 안내</h2><p>일시적으로 발생한 수학 AI 튜터 서비스 장애가 복구되었습니다.</p><p><img src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNlM2YyZmQiLz4KICAgICAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iMTUwIiByPSI4MCIgZmlsbD0iIzE5NzZkMiIgb3BhY2l0eT0iMC43Ii8+CiAgICAgIDxjaXJjbGUgY3g9IjE1MCIgY3k9IjEyMCIgcj0iNDAiIGZpbGw9IiM0MmE1ZjUiIG9wYWNpdHk9IjAuNiIvPgogICAgICA8Y2lyY2xlIGN4PSIyNTAiIGN5PSIxODAiIHI9IjUwIiBmaWxsPSIjNjRiNWY2IiBvcGFjaXR5PSIwLjYiLz4KICAgIDwvc3ZnPg==\" width=\"350\" /></p><p>이용에 불편을 드려 죄송합니다.</p>",
+    "createdAt": "2025-03-24T09:33:41.190Z",
+    "updatedAt": "2025-03-24T09:33:41.190Z",
+    "viewCount": 486,
+    "isPinned": false,
+    "showInBanner": false,
+    "showAsModal": false,
+    "priority": 1,
+    "author": {
+      "id": "admin",
+      "name": "관리자"
+    },
+    "status": "published",
+    "history": [
+      {
+        "action": "created",
+        "timestamp": "2025-03-24T09:33:41.190Z",
+        "status": "draft"
+      },
+      {
+        "action": "published",
+        "timestamp": "2025-03-24T09:33:42.190Z",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "id": "174102135818631",
+    "category": "announcement",
+    "title": "학생 계정 관리 안내 - 20차",
+    "content": "<h2>학생 계정 설정 및 관리</h2><p><img src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNmZmYzZTAiLz4KICAgICAgPHJlY3QgeD0iNTAiIHk9IjUwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iI2Y1N2MwMCIgb3BhY2l0eT0iMC43Ii8+CiAgICAgIDxyZWN0IHg9IjE4MCIgeT0iODAiIHdpZHRoPSIxMjAiIGhlaWdodD0iODAiIGZpbGw9IiNmYjhjMDAiIG9wYWNpdHk9IjAuNiIvPgogICAgICA8cmVjdCB4PSIxMjAiIHk9IjE2MCIgd2lkdGg9IjE2MCIgaGVpZ2h0PSI5MCIgZmlsbD0iI2ZmYTcyNiIgb3BhY2l0eT0iMC41Ii8+CiAgICA8L3N2Zz4=\" width=\"350\" /></p><p>학생들의 안전한 학습 환경을 위해 계정 관리가 중요합니다.</p><h3>권장 사항</h3><ul><li>비밀번호 정기적 변경</li><li>개인정보 보호 설정 확인</li><li>학습 시간 제한 설정</li></ul>",
+    "createdAt": "2025-03-03T17:02:38.186Z",
+    "updatedAt": "2025-03-03T17:02:38.186Z",
+    "viewCount": 136,
+    "isPinned": false,
+    "showInBanner": false,
+    "showAsModal": false,
+    "priority": 3,
+    "publishAt": "2025-03-11T02:02",
+    "author": {
+      "id": "admin",
+      "name": "관리자"
+    },
+    "status": "scheduled",
+    "history": [
+      {
+        "action": "created",
+        "timestamp": "2025-03-03T17:02:38.186Z",
+        "status": "scheduled"
+      }
+    ]
+  },
+  {
+    "id": "174091518785041",
+    "category": "event",
+    "title": "수학 올림피아드 준비반 모집 - 30차",
+    "content": "<h2>AI 기반 수학 올림피아드 준비반</h2><p><img src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNlM2YyZmQiLz4KICAgICAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iMTUwIiByPSI4MCIgZmlsbD0iIzE5NzZkMiIgb3BhY2l0eT0iMC43Ii8+CiAgICAgIDxjaXJjbGUgY3g9IjE1MCIgY3k9IjEyMCIgcj0iNDAiIGZpbGw9IiM0MmE1ZjUiIG9wYWNpdHk9IjAuNiIvPgogICAgICA8Y2lyY2xlIGN4PSIyNTAiIGN5PSIxODAiIHI9IjUwIiBmaWxsPSIjNjRiNWY2IiBvcGFjaXR5PSIwLjYiLz4KICAgIDwvc3ZnPg==\" width=\"380\" /></p><p>수학 올림피아드를 준비하는 학생들을 위한 특별반을 운영합니다.</p><h3>대상</h3><p>중학교 1~3학년 학생</p><h3>내용</h3><ul><li>AI 맞춤형 문제 풀이</li><li>실시간 질의응답</li><li>주간 모의고사</li></ul><p><strong>신청 기간:</strong> ~ 2025년 4월 30일</p>",
+    "createdAt": "2025-03-02T11:33:07.850Z",
+    "updatedAt": "2025-03-02T11:33:07.850Z",
+    "viewCount": 423,
+    "isPinned": false,
+    "showInBanner": false,
+    "showAsModal": false,
+    "priority": 2,
+    "publishAt": "2025-03-09T20:33",
+    "author": {
+      "id": "admin",
+      "name": "관리자"
+    },
+    "status": "scheduled",
+    "history": [
+      {
+        "action": "created",
+        "timestamp": "2025-03-02T11:33:07.850Z",
+        "status": "scheduled"
+      }
+    ]
+  }
+];
+
+    function generateData() {
+      localStorage.setItem('aidt_notices', JSON.stringify(notices));
+      console.log('✅ 테스트 데이터 생성 완료:', notices.length + '개');
+      alert('테스트 데이터 ' + notices.length + '개가 생성되었습니다!\n페이지를 새로고침하세요.');
+    }
+
+    function clearData() {
+      localStorage.removeItem('aidt_notices');
+      console.log('✅ 데이터 삭제 완료');
+      alert('모든 데이터가 삭제되었습니다!\n페이지를 새로고침하세요.');
+    }
+
+    console.log('📊 생성될 데이터 미리보기:', notices.slice(0, 5));
+    console.log('총 개수:', notices.length);
+  </script>
+</body>
+</html>
