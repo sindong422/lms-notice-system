@@ -324,6 +324,18 @@ const htmlContent = `
 </html>
 `;
 
+// HTML 파일 저장
 fs.writeFileSync(path.join(__dirname, 'test-data.html'), htmlContent);
+
+// JSON 파일 저장 (mock-notices.json 업데이트)
+const jsonData = {
+  notices: notices
+};
+fs.writeFileSync(
+  path.join(__dirname, 'src', 'data', 'mock-notices.json'),
+  JSON.stringify(jsonData, null, 2)
+);
+
 console.log('✅ test-data.html 파일이 생성되었습니다.');
-console.log('📌 브라우저에서 http://localhost:3000 을 열고, test-data.html 파일을 열어서 "데이터 생성" 버튼을 클릭하세요.');
+console.log('✅ src/data/mock-notices.json 파일이 업데이트되었습니다.');
+console.log(`📊 총 ${notices.length}개의 테스트 데이터가 생성되었습니다.`);
