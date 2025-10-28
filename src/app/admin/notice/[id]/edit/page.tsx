@@ -1,12 +1,13 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { useRouter, useParams } from 'next/navigation';
 import dynamic from 'next/dynamic';
-import { ArrowLeft, Eye } from 'lucide-react';
+import { ArrowLeft, Eye, Clock } from 'lucide-react';
 import { Notice, NoticeCategory, DismissDuration } from '@/types/notice';
 import { dismissDurationLabels, priorityLabels, determineNoticeStatus } from '@/lib/utils';
 import NoticePreviewModal from '@/components/notice/NoticePreviewModal';
+import NoticeHistoryModal from '@/components/notice/NoticeHistoryModal';
 
 const RichTextEditor = dynamic(() => import('@/components/editor/RichTextEditor'), {
   ssr: false,
@@ -36,6 +37,7 @@ export default function AdminNoticeEditPage() {
   const params = useParams();
   const [isPreviewOpen, setIsPreviewOpen] = useState(false);
   const [currentNotice, setCurrentNotice] = useState<Notice | null>(null);
+  const [isHistoryOpen, setIsHistoryOpen] = useState(false);
 
   // 폼 상태
   const [formData, setFormData] = useState({
@@ -113,7 +115,7 @@ export default function AdminNoticeEditPage() {
   }, [params.id]);
 
   // 저장 핸들러
-  const handleSubmit = (status: 'draft' | 'published') => {
+  const handleSubmit = () => {
     if (!formData.title.trim()) {
       alert('제목을 입력해주세요');
       return;
@@ -128,11 +130,12 @@ export default function AdminNoticeEditPage() {
 
     const index = notices.findIndex(n => n.id === params.id);
     if (index !== -1) {
-      // 상태 자동 판별
+      // 상태 자동 판별 (임시저장 기능 제거 → 기존 상태를 토대로 판별)
+      const existingStatus = notices[index].status;
       const finalStatus = determineNoticeStatus(
         formData.enablePublishAt ? formData.publishAt : undefined,
         formData.enableExpire ? formData.expireAt : undefined,
-        status
+        existingStatus
       );
 
       const now = new Date().toISOString();
@@ -190,7 +193,7 @@ export default function AdminNoticeEditPage() {
       };
 
       localStorage.setItem('aidt_notices', JSON.stringify(notices));
-      alert(status === 'draft' ? '임시저장되었습니다' : '수정되었습니다');
+      alert('수정되었습니다');
       router.push('/admin/notice');
     }
   };
@@ -200,14 +203,12 @@ export default function AdminNoticeEditPage() {
     setIsPreviewOpen(true);
   };
 
-  // 발행 정보 포맷 함수
-  const formatPublishInfo = () => {
+  const publishInfo = useMemo(() => {
     if (!currentNotice) return null;
 
     const publishType = currentNotice.publishAt ? '예약 발행' : '즉시 발행';
     const publishDate = currentNotice.publishAt || currentNotice.createdAt;
 
-    // 수동으로 날짜 포맷팅 (서버/클라이언트 동일하게)
     const date = new Date(publishDate);
     const year = date.getFullYear();
     const month = String(date.getMonth() + 1).padStart(2, '0');
@@ -216,8 +217,14 @@ export default function AdminNoticeEditPage() {
     const minutes = String(date.getMinutes()).padStart(2, '0');
     const formattedDate = `${year}. ${month}. ${day}. ${hours}:${minutes}`;
 
-    return { publishType, formattedDate };
-  };
+    const currentStatus = determineNoticeStatus(
+      currentNotice.publishAt,
+      currentNotice.expireAt,
+      currentNotice.status
+    ) as Notice['status'];
+
+    return { publishType, formattedDate, currentStatus };
+  }, [currentNotice]);
 
   // 미리보기용 공지 객체 생성
   const previewNotice: Partial<Notice> = {
@@ -253,6 +260,55 @@ export default function AdminNoticeEditPage() {
         </button>
         <h1 className="text-3xl font-bold">공지사항 수정</h1>
       </div>
+
+      {/* 발행 정보 (상세 페이지와 동일) */}
+      {publishInfo && (
+        <section className="bg-gray-50 border border-gray-200 rounded-lg p-6 mb-8">
+          <div className="flex items-start justify-between mb-3">
+            <div className="flex items-center gap-2">
+              <h2 className="text-lg font-semibold text-gray-900">발행 정보</h2>
+              <button
+                onClick={() => setIsHistoryOpen(true)}
+                className="p-1.5 hover:bg-gray-200 rounded-lg transition-colors"
+                title="히스토리 보기"
+              >
+                <Clock className="w-4 h-4 text-gray-600" />
+              </button>
+            </div>
+            <span className="text-xs text-gray-500 bg-white px-2 py-1 rounded border border-gray-300">
+              관리자 전용 - 사용자 화면에는 표시되지 않음
+            </span>
+          </div>
+          <div className="space-y-2">
+            <div className="flex items-center gap-2">
+              <span className="text-sm font-medium text-gray-700 w-20">발행 유형:</span>
+              <span className="text-sm text-gray-900 font-medium">
+                {publishInfo.publishType}
+              </span>
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="text-sm font-medium text-gray-700 w-20">발행 일시:</span>
+              <span className="text-sm text-gray-900 font-medium">
+                {publishInfo.formattedDate}
+              </span>
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="text-sm font-medium text-gray-700 w-20">상태:</span>
+              <span className={`text-sm px-2 py-1 rounded ${
+                publishInfo.currentStatus === 'published' ? 'bg-green-100 text-green-800' :
+                publishInfo.currentStatus === 'scheduled' ? 'bg-blue-100 text-blue-800' :
+                publishInfo.currentStatus === 'draft' ? 'bg-gray-100 text-gray-800' :
+                'bg-red-100 text-red-800'
+              }`}>
+                {publishInfo.currentStatus === 'published' ? '발행됨' :
+                 publishInfo.currentStatus === 'scheduled' ? '예약됨' :
+                 publishInfo.currentStatus === 'draft' ? '임시저장' :
+                 '만료됨'}
+              </span>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* 폼 */}
       <div className="space-y-8">
@@ -313,27 +369,6 @@ export default function AdminNoticeEditPage() {
             </p>
           </div>
         </section>
-
-        {/* 발행 정보 */}
-        {currentNotice && formatPublishInfo() && (
-          <section className="bg-gray-50 border border-gray-200 rounded-lg p-6">
-            <h2 className="text-lg font-semibold text-gray-900 mb-3">발행 정보</h2>
-            <div className="space-y-2">
-              <div className="flex items-center gap-2">
-                <span className="text-sm font-medium text-gray-700 w-20">발행 유형:</span>
-                <span className="text-sm text-gray-900 font-medium">
-                  {formatPublishInfo()!.publishType}
-                </span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="text-sm font-medium text-gray-700 w-20">발행 일시:</span>
-                <span className="text-sm text-gray-900 font-medium">
-                  {formatPublishInfo()!.formattedDate}
-                </span>
-              </div>
-            </div>
-          </section>
-        )}
 
         {/* 본문 */}
         <section className="bg-white border border-gray-200 rounded-lg p-6">
@@ -719,13 +754,7 @@ export default function AdminNoticeEditPage() {
               취소
             </button>
             <button
-              onClick={() => handleSubmit('draft')}
-              className="px-6 py-3 border border-gray-300 rounded-lg hover:bg-gray-50 font-medium"
-            >
-              임시저장
-            </button>
-            <button
-              onClick={() => handleSubmit('published')}
+              onClick={handleSubmit}
               className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 font-medium"
             >
               수정하기
@@ -740,6 +769,14 @@ export default function AdminNoticeEditPage() {
         isOpen={isPreviewOpen}
         onClose={() => setIsPreviewOpen(false)}
       />
+
+      {currentNotice && (
+        <NoticeHistoryModal
+          history={currentNotice.history || []}
+          isOpen={isHistoryOpen}
+          onClose={() => setIsHistoryOpen(false)}
+        />
+      )}
     </div>
   );
 }

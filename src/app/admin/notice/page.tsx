@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useMemo } from 'react';
 import { useRouter } from 'next/navigation';
-import { Plus, Search, Edit, Trash2, ChevronLeft, ChevronRight, Eye, EyeOff, Settings, ArrowUpDown, ArrowUp, ArrowDown } from 'lucide-react';
+import { Plus, Search, Edit, Trash2, ChevronLeft, ChevronRight, ChevronsLeft, ChevronsRight, Eye, EyeOff, Settings, ArrowUpDown, ArrowUp, ArrowDown } from 'lucide-react';
 import { Notice } from '@/types/notice';
 import NoticeTag from '@/components/notice/NoticeTag';
 import { priorityLabels, noticeStatusLabels, determineNoticeStatus } from '@/lib/utils';
@@ -22,8 +22,15 @@ export default function AdminNoticeListPage() {
   const [showBannerOnly, setShowBannerOnly] = useState(false);
   const [showModalOnly, setShowModalOnly] = useState(false);
   const [categorySettingsOpen, setCategorySettingsOpen] = useState(false);
-  const [customCategories, setCustomCategories] = useState(getCategories());
+  const [customCategories, setCustomCategories] = useState<ReturnType<typeof getCategories>>([]);
   const [sortOrder, setSortOrder] = useState<'asc' | 'desc'>('desc'); // No. 컬럼 정렬 순서
+  const [mounted, setMounted] = useState(false);
+
+  // 클라이언트 사이드에서만 카테고리 로드
+  useEffect(() => {
+    setMounted(true);
+    setCustomCategories(getCategories());
+  }, []);
 
   // 로컬스토리지에서 데이터 로드
   useEffect(() => {
@@ -186,6 +193,17 @@ export default function AdminNoticeListPage() {
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
   const currentNotices = noticesWithNumber.slice(startIndex, endIndex);
+  const maxPageButtons = 5;
+  // Calculate sequential page numbers, exposing up to five at a time
+  const visiblePageNumbers = useMemo(() => {
+    if (totalPages === 0) return [];
+    const chunkStart = Math.floor((currentPage - 1) / maxPageButtons) * maxPageButtons + 1;
+    const chunkEnd = Math.min(chunkStart + maxPageButtons - 1, totalPages);
+    return Array.from(
+      { length: chunkEnd - chunkStart + 1 },
+      (_, index) => chunkStart + index
+    );
+  }, [totalPages, currentPage]);
 
   // 검색 또는 필터 변경 시 첫 페이지로 이동
   useEffect(() => {
@@ -256,7 +274,7 @@ export default function AdminNoticeListPage() {
         <div className="flex flex-wrap gap-2 items-center">
           <span className="text-sm text-gray-600 self-center mr-2">카테고리:</span>
 
-          {customCategories.map((category) => (
+          {mounted && customCategories.map((category) => (
             <button
               key={category.id}
               onClick={() => toggleCategoryFilter(category.id)}
@@ -556,6 +574,20 @@ export default function AdminNoticeListPage() {
           {/* 하단: 페이지네이션 버튼 (가운데 정렬) */}
           {totalPages > 1 && (
             <div className="flex items-center justify-center gap-2">
+              {/* 처음 페이지 */}
+              <button
+                onClick={() => goToPage(1)}
+                disabled={currentPage === 1}
+                className={`p-2 rounded-lg transition ${
+                  currentPage === 1
+                    ? 'text-gray-300 cursor-not-allowed'
+                    : 'text-gray-700 hover:bg-gray-100'
+                }`}
+                aria-label="첫 페이지"
+              >
+                <ChevronsLeft className="w-5 h-5" />
+              </button>
+
               {/* 이전 페이지 */}
               <button
                 onClick={() => goToPage(currentPage - 1)}
@@ -569,40 +601,21 @@ export default function AdminNoticeListPage() {
                 <ChevronLeft className="w-5 h-5" />
               </button>
 
-              {/* 페이지 번호 */}
+              {/* 페이지 번호 (연속된 5개씩 표시) */}
               <div className="flex items-center gap-1">
-                {Array.from({ length: totalPages }, (_, i) => i + 1).map(page => {
-                  // 현재 페이지 주변 페이지만 표시
-                  if (
-                    page === 1 ||
-                    page === totalPages ||
-                    (page >= currentPage - 1 && page <= currentPage + 1)
-                  ) {
-                    return (
-                      <button
-                        key={page}
-                        onClick={() => goToPage(page)}
-                        className={`px-3 py-1 rounded-lg text-sm font-medium transition ${
-                          page === currentPage
-                            ? 'bg-blue-600 text-white'
-                            : 'text-gray-700 hover:bg-gray-100'
-                        }`}
-                      >
-                        {page}
-                      </button>
-                    );
-                  } else if (
-                    page === currentPage - 2 ||
-                    page === currentPage + 2
-                  ) {
-                    return (
-                      <span key={page} className="px-2 text-gray-400">
-                        ...
-                      </span>
-                    );
-                  }
-                  return null;
-                })}
+                {visiblePageNumbers.map(page => (
+                  <button
+                    key={page}
+                    onClick={() => goToPage(page)}
+                    className={`px-3 py-1 rounded-lg text-sm font-medium transition ${
+                      page === currentPage
+                        ? 'bg-blue-600 text-white'
+                        : 'text-gray-700 hover:bg-gray-100'
+                    }`}
+                  >
+                    {page}
+                  </button>
+                ))}
               </div>
 
               {/* 다음 페이지 */}
@@ -616,6 +629,20 @@ export default function AdminNoticeListPage() {
                 }`}
               >
                 <ChevronRight className="w-5 h-5" />
+              </button>
+
+              {/* 마지막 페이지 */}
+              <button
+                onClick={() => goToPage(totalPages)}
+                disabled={currentPage === totalPages}
+                className={`p-2 rounded-lg transition ${
+                  currentPage === totalPages
+                    ? 'text-gray-300 cursor-not-allowed'
+                    : 'text-gray-700 hover:bg-gray-100'
+                }`}
+                aria-label="마지막 페이지"
+              >
+                <ChevronsRight className="w-5 h-5" />
               </button>
             </div>
           )}

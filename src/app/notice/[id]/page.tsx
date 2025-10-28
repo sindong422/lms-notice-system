@@ -7,6 +7,7 @@ import { ArrowLeft, ChevronLeft, ChevronRight, Edit, Clock } from 'lucide-react'
 import NoticeTag from '@/components/notice/NoticeTag';
 import NoticeHistoryModal from '@/components/notice/NoticeHistoryModal';
 import { Notice } from '@/types/notice';
+import { markAsRead, determineNoticeStatus } from '@/lib/utils';
 
 export default function NoticeDetailPage() {
   const params = useParams();
@@ -29,12 +30,24 @@ export default function NoticeDetailPage() {
 
     const notices: Notice[] = JSON.parse(stored);
 
-    // 관리자는 모든 공지 볼 수 있음, 일반 사용자는 발행된 공지만
-    const viewableNotices = isAdmin ? notices : notices.filter(n => n.status === 'published');
+    // 관리자는 모든 공지 볼 수 있음, 일반 사용자는 현재 시점에 발행 상태인 공지만
+    const viewableNotices = isAdmin
+      ? notices
+      : notices.filter(n => determineNoticeStatus(n.publishAt, n.expireAt, n.status) === 'published');
 
-    // 현재 공지 찾기
+    // 현재 공지 찾기 (상태를 최신으로 재계산)
     const currentNotice = viewableNotices.find(n => n.id === noticeId);
-    setNotice(currentNotice || null);
+    const currentNoticeWithStatus = currentNotice
+      ? {
+          ...currentNotice,
+          status: determineNoticeStatus(
+            currentNotice.publishAt,
+            currentNotice.expireAt,
+            currentNotice.status
+          ) as Notice['status'],
+        }
+      : null;
+    setNotice(currentNoticeWithStatus);
 
     if (currentNotice) {
       // 조회수 증가
@@ -44,10 +57,23 @@ export default function NoticeDetailPage() {
         localStorage.setItem('aidt_notices', JSON.stringify(notices));
       }
 
+      // 읽음 상태 저장 (관리자가 아닌 경우에만)
+      if (!isAdmin) {
+        markAsRead(noticeId);
+      }
+
       // 이전/다음 공지 찾기
       const currentIndex = viewableNotices.findIndex(n => n.id === noticeId);
-      setPrevNotice(viewableNotices[currentIndex + 1] || null);
-      setNextNotice(viewableNotices[currentIndex - 1] || null);
+      const resolveNoticeStatus = (target: Notice | null) =>
+        target
+          ? ({
+              ...target,
+              status: determineNoticeStatus(target.publishAt, target.expireAt, target.status),
+            } as Notice)
+          : null;
+
+      setPrevNotice(resolveNoticeStatus(viewableNotices[currentIndex + 1] || null));
+      setNextNotice(resolveNoticeStatus(viewableNotices[currentIndex - 1] || null));
     }
   }, [noticeId, isAdmin]);
 

@@ -146,3 +146,37 @@ export function getCategoryColorClasses(color: string, selected: boolean = false
 
   return baseColors[color as keyof typeof baseColors] || baseColors.gray;
 }
+
+// 배너용 색상 클래스 생성 (배경, 테두리, 텍스트)
+export function getBannerColorClasses(color: string): string {
+  const bannerColors = {
+    red: 'bg-red-50 border-red-200 text-red-900',
+    yellow: 'bg-yellow-50 border-yellow-200 text-yellow-900',
+    pink: 'bg-pink-50 border-pink-200 text-pink-900',
+    blue: 'bg-blue-50 border-blue-200 text-blue-900',
+    green: 'bg-green-50 border-green-200 text-green-900',
+    purple: 'bg-purple-50 border-purple-200 text-purple-900',
+    indigo: 'bg-indigo-50 border-indigo-200 text-indigo-900',
+    orange: 'bg-orange-50 border-orange-200 text-orange-900',
+    gray: 'bg-gray-50 border-gray-200 text-gray-900',
+  };
+
+  return bannerColors[color as keyof typeof bannerColors] || bannerColors.blue;
+}
+
+// 배너 닫기 버튼용 색상 클래스 생성
+export function getBannerButtonColorClasses(color: string): string {
+  const buttonColors = {
+    red: 'bg-white border-red-300 text-red-700 hover:bg-red-50',
+    yellow: 'bg-white border-yellow-400 text-yellow-800 hover:bg-yellow-50',
+    pink: 'bg-white border-pink-300 text-pink-700 hover:bg-pink-50',
+    blue: 'bg-white border-blue-300 text-blue-700 hover:bg-blue-50',
+    green: 'bg-white border-green-300 text-green-700 hover:bg-green-50',
+    purple: 'bg-white border-purple-300 text-purple-700 hover:bg-purple-50',
+    indigo: 'bg-white border-indigo-300 text-indigo-700 hover:bg-indigo-50',
+    orange: 'bg-white border-orange-300 text-orange-700 hover:bg-orange-50',
+    gray: 'bg-white border-gray-300 text-gray-700 hover:bg-gray-50',
+  };
+
+  return buttonColors[color as keyof typeof buttonColors] || buttonColors.blue;
+}

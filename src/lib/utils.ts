@@ -100,3 +100,30 @@ export const determineNoticeStatus = (
   // 발행됨
   return 'published';
 };
+
+// 공지사항 읽음 상태 저장
+export const markAsRead = (noticeId: string): void => {
+  if (typeof window === 'undefined') return;
+
+  const key = 'aidt_read_notices';
+  const stored = localStorage.getItem(key);
+  const readNotices: string[] = stored ? JSON.parse(stored) : [];
+
+  // 중복 방지
+  if (!readNotices.includes(noticeId)) {
+    readNotices.push(noticeId);
+    localStorage.setItem(key, JSON.stringify(readNotices));
+  }
+};
+
+// 공지사항 읽음 상태 확인
+export const isRead = (noticeId: string): boolean => {
+  if (typeof window === 'undefined') return false;
+
+  const key = 'aidt_read_notices';
+  const stored = localStorage.getItem(key);
+  if (!stored) return false;
+
+  const readNotices: string[] = JSON.parse(stored);
+  return readNotices.includes(noticeId);
+};

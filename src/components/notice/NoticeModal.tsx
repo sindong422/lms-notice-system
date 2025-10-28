@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Notice } from '@/types/notice';
 import NoticeTag from './NoticeTag';
-import { isDismissed, setDismissed, dismissDurationLabels } from '@/lib/utils';
+import { isDismissed, setDismissed, dismissDurationLabels, determineNoticeStatus } from '@/lib/utils';
 
 export default function NoticeModal() {
   const router = useRouter();
@@ -33,6 +33,11 @@ export default function NoticeModal() {
     const activeModals = notices
       .filter(notice => {
         if (!notice.showAsModal) return false;
+
+        // 현재 상태 기준으로 발행된 공지만 노출
+        if (determineNoticeStatus(notice.publishAt, notice.expireAt, notice.status) !== 'published') {
+          return false;
+        }
 
         // 기간 체크
         if (notice.modalStartDate) {

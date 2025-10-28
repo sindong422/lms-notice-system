@@ -4,7 +4,8 @@ import { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import { X, ChevronLeft, ChevronRight, Pause, Play } from 'lucide-react';
 import { Notice } from '@/types/notice';
-import { isDismissed, setDismissed, dismissDurationLabels } from '@/lib/utils';
+import { isDismissed, setDismissed, dismissDurationLabels, determineNoticeStatus } from '@/lib/utils';
+import { getCategoryById, getBannerColorClasses, getBannerButtonColorClasses } from '@/lib/categoryManager';
 
 export default function NoticeBanner() {
   const router = useRouter();
@@ -34,6 +35,11 @@ export default function NoticeBanner() {
     const activeBanners = notices
       .filter(notice => {
         if (!notice.showInBanner) return false;
+
+        // 현재 상태 기준으로 발행된 공지만 노출
+        if (determineNoticeStatus(notice.publishAt, notice.expireAt, notice.status) !== 'published') {
+          return false;
+        }
 
         // 기간 체크
         if (notice.bannerStartDate) {
@@ -158,31 +164,28 @@ export default function NoticeBanner() {
 
   const currentBanner = bannerNotices[currentIndex];
 
-  // 카테고리별 스타일
+  // 카테고리별 스타일 (커스텀 카테고리 색상 적용)
   const getBannerStyle = () => {
-    switch (currentBanner.category) {
-      case 'urgent':
-        return 'bg-red-50 border-red-200 text-red-900';
-      case 'update':
-        return 'bg-yellow-50 border-yellow-200 text-yellow-900';
-      case 'event':
-        return 'bg-pink-50 border-pink-200 text-pink-900';
-      default:
-        return 'bg-blue-50 border-blue-200 text-blue-900';
+    const category = getCategoryById(currentBanner.category);
+    if (category) {
+      return getBannerColorClasses(category.color);
     }
+    // 카테고리를 찾을 수 없는 경우 기본값
+    return 'bg-blue-50 border-blue-200 text-blue-900';
   };
 
   const getEmoji = () => {
-    switch (currentBanner.category) {
-      case 'urgent':
-        return '🔴';
-      case 'update':
-        return '⚙️';
-      case 'event':
-        return '🎁';
-      default:
-        return '📌';
+    const category = getCategoryById(currentBanner.category);
+    return category?.emoji || '📌';
+  };
+
+  const getButtonStyle = () => {
+    const category = getCategoryById(currentBanner.category);
+    if (category) {
+      return getBannerButtonColorClasses(category.color);
     }
+    // 카테고리를 찾을 수 없는 경우 기본값
+    return 'bg-white border-blue-300 text-blue-700 hover:bg-blue-50';
   };
 
   return (
@@ -254,15 +257,7 @@ export default function NoticeBanner() {
 
               <button
                 onClick={handleClose}
-                className={`px-3 py-1 rounded text-sm transition-colors border ${
-                  currentBanner.category === 'urgent'
-                    ? 'bg-white border-red-300 text-red-700 hover:bg-red-50'
-                    : currentBanner.category === 'update'
-                    ? 'bg-white border-yellow-400 text-yellow-800 hover:bg-yellow-50'
-                    : currentBanner.category === 'event'
-                    ? 'bg-white border-pink-300 text-pink-700 hover:bg-pink-50'
-                    : 'bg-white border-blue-300 text-blue-700 hover:bg-blue-50'
-                }`}
+                className={`px-3 py-1 rounded text-sm transition-colors border ${getButtonStyle()}`}
                 aria-label="배너 닫기"
               >
                 {dismissDurationLabels[currentBanner.bannerDismissDuration || '1day']}
