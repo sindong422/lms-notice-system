@@ -12,9 +12,13 @@ export default function NoticeBanner() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
   const [isPaused, setIsPaused] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const autoPlayRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
+    // 클라이언트 마운트 확인
+    setMounted(true);
+
     // 배너 표시할 공지들 찾기
     const stored = localStorage.getItem('aidt_notices');
     if (!stored) return;
@@ -147,6 +151,9 @@ export default function NoticeBanner() {
     }
   };
 
+  // 초기 렌더링 시 hydration 불일치 방지
+  if (!mounted) return null;
+
   if (bannerNotices.length === 0) return null;
 
   const currentBanner = bannerNotices[currentIndex];
@@ -180,7 +187,9 @@ export default function NoticeBanner() {
 
   return (
     <div
-      className={`border-b ${getBannerStyle()} sticky top-0 z-50`}
+      className={`border-b ${getBannerStyle()} sticky top-0 z-50 transition-opacity duration-300 ${
+        mounted ? 'opacity-100' : 'opacity-0'
+      }`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >

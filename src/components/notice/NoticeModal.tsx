@@ -12,8 +12,12 @@ export default function NoticeModal() {
   const [modalNotices, setModalNotices] = useState<Notice[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    // 클라이언트 마운트 확인
+    setMounted(true);
+
     // 모달 표시할 공지들 찾기
     const stored = localStorage.getItem('aidt_notices');
     if (!stored) return;
@@ -101,6 +105,9 @@ export default function NoticeModal() {
     setCurrentIndex(index);
   };
 
+  // 초기 렌더링 시 hydration 불일치 방지
+  if (!mounted) return null;
+
   if (!isVisible || modalNotices.length === 0) return null;
 
   const currentModal = modalNotices[currentIndex];
@@ -109,12 +116,12 @@ export default function NoticeModal() {
     <>
       {/* 오버레이 */}
       <div
-        className="fixed inset-0 bg-black/50 z-[9998]"
+        className="fixed inset-0 bg-black/50 z-[9998] transition-opacity duration-300"
         onClick={handleClose}
       />
 
       {/* 모달 */}
-      <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4 pointer-events-none">
+      <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4 pointer-events-none transition-opacity duration-300">
         <div
           className="bg-white rounded-2xl shadow-2xl max-w-md w-full max-h-[80vh] overflow-hidden flex flex-col pointer-events-auto"
           onClick={(e) => e.stopPropagation()}
